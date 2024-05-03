@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is '/Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Gradiente coniugati/.texpadtmp/main.blg'
+[114] biber-darwin:340> INFO - === Thu May  2, 2024, 19:44:00
+[439] Biber.pm:419> INFO - Reading '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Gradiente coniugati/.texpadtmp/main.bcf'
+[1029] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
+[1061] Biber.pm:4419> INFO - Processing section 0
+[1084] Biber.pm:4610> INFO - Looking for bibtex file '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Gradiente coniugati/tau.bib' for section 0
+[1085] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1093] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Gradiente coniugati/tau.bib'
+[1190] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1190] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1191] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'it-IT'
+[1191] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
+[1194] bbl.pm:660> INFO - Writing '/Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Gradiente coniugati/.texpadtmp/main.bbl' with encoding 'UTF-8'
+[1195] bbl.pm:763> INFO - Output to /Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Gradiente coniugati/.texpadtmp/main.bbl
