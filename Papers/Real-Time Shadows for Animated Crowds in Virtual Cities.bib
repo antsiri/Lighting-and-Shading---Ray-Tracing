@@ -1,0 +1,17 @@
+@inproceedings{10.1145/505008.505024,
+author = {Loscos, C\'{e}line and Tecchia, Franco and Chrysanthou, Yiorgos},
+title = {Real-time shadows for animated crowds in virtual cities},
+year = {2001},
+isbn = {1581134274},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/505008.505024},
+doi = {10.1145/505008.505024},
+abstract = {In this paper, we address the problem of shadow computation for large environments including thousands of dynamic objects. The method we propose is based on the assumption that the environment is 2.5D, which is often the case for virtual cities, thus avoiding complex visibility computation. We apply our method for virtual cities populated by thousands of walking humans, which we render with impostors, allowing real time simulation.In this paper, we treat the cases of shadows cast by buildings on humans, and by humans on the ground. To avoid 3D computation, we represent the shadows cast by buildings onto the environment with a 2.5D shadow map. When humans move, we quickly access the shadow information at the current location with a 2D grid. For each new position of a human, we compute its coverage by the shadow, and we render the shadow on top of the impostor with low cost using multi-texturing hardware. We also use the property of an impostor to display the shadow of humans on the ground plane, by projecting the impostor relatively to the light source.The method is currently limited to sharp shadows and a single light source. However approximations could be made to allow non-accurate soft-shadows. We show in the results that the computation of the shadows, as well as the display is done in real time, and that the method could be easily extended to real time moving light sources.},
+booktitle = {Proceedings of the ACM Symposium on Virtual Reality Software and Technology},
+pages = {85–92},
+numpages = {8},
+keywords = {dynamic shadows, multi-texturing, populated virtual cities, real time rendering, shadow computation},
+location = {Baniff, Alberta, Canada},
+series = {VRST '01}
+}
