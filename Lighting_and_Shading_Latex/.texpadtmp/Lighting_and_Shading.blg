@@ -1,15 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.blg'
-[109] biber-darwin:340> INFO - === Mon May  6, 2024, 14:08:30
-[344] Biber.pm:419> INFO - Reading '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bcf'
-[455] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
-[476] Biber.pm:4419> INFO - Processing section 0
-[493] Biber.pm:4610> INFO - Looking for bibtex file '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/tau.bib' for section 0
+[97] biber-darwin:340> INFO - === Tue May  7, 2024, 10:28:22
+[345] Biber.pm:419> INFO - Reading '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bcf'
+[457] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[477] Biber.pm:4419> INFO - Processing section 0
+[492] Biber.pm:4610> INFO - Looking for bibtex file '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/tau.bib' for section 0
 [494] bibtex.pm:1713> INFO - LaTeX decoding ...
-[501] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/tau.bib'
-[583] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[583] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[583] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'it-IT'
-[583] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
-[587] bbl.pm:660> INFO - Writing '/Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl' with encoding 'UTF-8'
-[588] bbl.pm:763> INFO - Output to /Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl
+[500] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/tau.bib'
+[544] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[544] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[544] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'it-IT'
+[545] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
+[552] bbl.pm:660> INFO - Writing '/Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl' with encoding 'UTF-8'
+[553] bbl.pm:763> INFO - Output to /Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl
+[553] Biber.pm:131> WARN - legacy month field 'May' in entry 'Saleh_2017' is not an integer - this will probably not sort properly.
+[553] Biber.pm:133> INFO - WARNINGS: 1

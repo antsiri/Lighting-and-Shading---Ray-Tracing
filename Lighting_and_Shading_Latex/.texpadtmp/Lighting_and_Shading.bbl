@@ -19,62 +19,35 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global}
-    \entry{einstein}{article}{}
+    \entry{Saleh_2017}{misc}{}
       \name{author}{1}{}{%
-        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
-           family={Einstein},
-           familyi={E\bibinitperiod},
-           given={Albert},
-           giveni={A\bibinitperiod}}}%
+        {{hash=83a72f2998ca9a509903e03f31a5e8e2}{%
+           family={Saleh},
+           familyi={S\bibinitperiod},
+           given={Burhan},
+           giveni={B\bibinitperiod}}}%
       }
-      \strng{namehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{fullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{bibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authorbibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authornamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authorfullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \strng{namehash}{83a72f2998ca9a509903e03f31a5e8e2}
+      \strng{fullhash}{83a72f2998ca9a509903e03f31a5e8e2}
+      \strng{bibnamehash}{83a72f2998ca9a509903e03f31a5e8e2}
+      \strng{authorbibnamehash}{83a72f2998ca9a509903e03f31a5e8e2}
+      \strng{authornamehash}{83a72f2998ca9a509903e03f31a5e8e2}
+      \strng{authorfullhash}{83a72f2998ca9a509903e03f31a5e8e2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Annalen der Physik}
-      \field{number}{10}
-      \field{title}{{Zur Elektrodynamik bewegter Körper}. ({German}) [{On} the electrodynamics of moving bodies]}
-      \field{volume}{322}
-      \field{year}{1905}
-      \field{pages}{891\bibrangedash 921}
-      \range{pages}{31}
-      \verb{doi}
-      \verb http://dx.doi.org/10.1002/andp.19053221004
+      \field{journaltitle}{Academia.edu}
+      \field{month}{5}
+      \field{title}{Computer Graphics Fundamental: Lighting and shading}
+      \field{year}{2017}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.academia.edu/33137083/Computer_Graphics_Fundamental_Lighting_and_Shading
       \endverb
-      \keyw{physics}
-    \endentry
-    \entry{dirac}{book}{}
-      \name{author}{1}{}{%
-        {{hash=59342ede3a101402b34939644b51ad06}{%
-           family={Dirac},
-           familyi={D\bibinitperiod},
-           given={Paul\bibnamedelimb Adrien\bibnamedelima Maurice},
-           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Clarendon Press}%
-      }
-      \strng{namehash}{59342ede3a101402b34939644b51ad06}
-      \strng{fullhash}{59342ede3a101402b34939644b51ad06}
-      \strng{bibnamehash}{59342ede3a101402b34939644b51ad06}
-      \strng{authorbibnamehash}{59342ede3a101402b34939644b51ad06}
-      \strng{authornamehash}{59342ede3a101402b34939644b51ad06}
-      \strng{authorfullhash}{59342ede3a101402b34939644b51ad06}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780198520115}
-      \field{series}{International series of monographs on physics}
-      \field{title}{The Principles of Quantum Mechanics}
-      \field{year}{1981}
-      \keyw{physics}
+      \verb{url}
+      \verb https://www.academia.edu/33137083/Computer_Graphics_Fundamental_Lighting_and_Shading
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
