@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  7 MAY 2024 10:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  8 MAY 2024 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1462,7 +1462,26 @@ Package csquotes Info: Redefining alias 'default' -> 'italian'.
 LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 49.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/t1stix2.fd
 File: t1stix2.fd 2018/04/02 v2.0.0-latex stix2 T1 font definitions
-) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.aux)
+) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.aux
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
+)
 \openout1 = `Lighting_and_Shading.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -1487,8 +1506,7 @@ File: ls1stix2.fd 2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 49.
 LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line 49.
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls2stix2.fd
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls2stix2.fd
 File: ls2stix2.fd 2018/04/02 v2.0.0-latex stix2 LS2 font definitions
 )
 LaTeX Font Info:    ... okay on input line 49.
@@ -1541,6 +1559,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count532
+Package pbalance Info: Page "naturally" balanced, doing nothing on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1685,20 +1704,40 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L}});
 (lettrine.sty)             reported on input line 60.
+Package lettrine.sty Info: Targeted height = 15.846pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {U}});
+(lettrine.sty)             reported on input line 71.
+<Figures/01.png, id=23, 205.76875pt x 177.66376pt>
+File: Figures/01.png Graphic file (type png)
+<use Figures/01.png>
+Package pdftex.def Info: Figures/01.png  used on input line 75.
+(pdftex.def)             Requested size: 76.70717pt x 66.23065pt.
+<Figures/02.png, id=24, 245.91875pt x 212.795pt>
+File: Figures/02.png Graphic file (type png)
+<use Figures/02.png>
+Package pdftex.def Info: Figures/02.png  used on input line 83.
+(pdftex.def)             Requested size: 76.70717pt x 66.37488pt.
+<Figures/03.png, id=25, 205.76875pt x 177.66376pt>
+File: Figures/03.png Graphic file (type png)
+<use Figures/03.png>
+Package pdftex.def Info: Figures/03.png  used on input line 91.
+(pdftex.def)             Requested size: 76.70717pt x 66.23065pt.
+<Figures/04.png, id=26, 271.0125pt x 290.08376pt>
+File: Figures/04.png Graphic file (type png)
+<use Figures/04.png>
+Package pdftex.def Info: Figures/04.png  used on input line 99.
+(pdftex.def)             Requested size: 76.70717pt x 82.10373pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 305.
+(Font)              scaled to size 6.64998pt on input line 339.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.64998pt on input line 305.
+(Font)              scaled to size 6.64998pt on input line 339.
  [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}
 
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}
-
-] 
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc} <./Figures/01.png> <./Figures/02.png> <./Figures/03.png> <./Figures/04.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
-
-Package pbalance Warning: Could not balance, doing nothing.
-
+Package pbalance Info: Done balancing page 1 on input line 339.
 (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1706,30 +1745,25 @@ L3 programming layer <2024-02-20>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Lighting_and_Shading
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'Lighting_and_Shading.run.xml'.
 \openout1 = `Lighting_and_Shading.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67883 strings out of 474116
- 1484038 string characters out of 5743682
- 2620492 words of memory out of 5000000
- 89220 multiletter control sequences out of 15000+600000
- 698216 words of font info for 208 fonts, out of 8000000 for 9000
+ 67976 strings out of 474116
+ 1485887 string characters out of 5743682
+ 2632839 words of memory out of 5000000
+ 89299 multiletter control sequences out of 15000+600000
+ 705792 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,11n,143p,1078b,1484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,11n,143p,1078b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (1 page, 640328 bytes).
+Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (1 page, 706106 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 67629 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 69729 words of extra memory for PDF output out of 74296 (max. 10000000)
 
