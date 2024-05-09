@@ -6,7 +6,7 @@
 % TITLE
 %----------------------------------------------------------
 
-\title{Lighting and Shading}
+\title{Lighting and Shading - Ray tracing}
 
 %----------------------------------------------------------
 % AUTHORS, AFFILIATIONS AND PROFESSOR
@@ -37,12 +37,12 @@
 %----------------------------------------------------------
 
 \begin{abstract}    
-    Welcom to tau ($\tau$) \LaTeX\ class for making academic articles and lab reports. In this example template, we will guide you through the process of using and customizing this class to your needs. For more information of this class check out the appendix section. There, you will find snippets codes that define key aspects of the template, allowing you to explore and modify them.
+    In questo progetto viene fatta un'introduzione generale al lighting e allo shading, con una presentazione dei modelli di riflessione e di shading che possono essere applicati alla grafica computazionale. Viene poi presentato in maniera più approfondita il modello del ray tracing.
 \end{abstract}
 
 %----------------------------------------------------------
 
-\keywords{\LaTeX\ class, lab report, academic article, tau class}
+\keywords{calcolo scientifico, lighting, shading, ray tracing.}
 
 %----------------------------------------------------------
 
@@ -86,14 +86,14 @@
        			\label{fig:figure}
 			\end{figure}   
     	
-    	\item \textbf{Luce direzionale}. %TODO: completare luce direzionale
+    	\item \textbf{Luce direzionale}. Tale tipo è prodotta da una sorgente di luce da una distanza infinita dalla scena. Tutti i raggi di luce si espandano in una singola direzione e con la stessa intensità ovunque. \'E caratterizzata da colore, intensità e direzione.
     		\begin{figure}[H]
         		\centering
         		\includegraphics[width=0.3\columnwidth]{Figures/03.png}
         		\caption{Luce direzionale}
         		\label{fig:figure}
 			\end{figure}
-    	\item \textbf{Spotlight}. %TODO: completare spotlight
+    	\item \textbf{Spotlight}. La luce si irradia in un cono con più luce al centro di esso. Questa luce è fissata all'asse primario di direzione con una restrizione su di essa. \'E caratterizzata come un punto di propagazione, un asse di direzione, un raggio intorno all'asse e la possibilità di una funzione di decadimento radiale. 
     		\begin{figure}[H]
 		        \centering
 		        \includegraphics[width=0.3\columnwidth]{Figures/04.png}
@@ -103,6 +103,13 @@
 \end{enumerate}
 
 \section{Modelli di riflessione}
+L'obiettivo principale dello shading è la produzione di un risultato accettabile quando la superficie dell'oggetto è affetta dai raggi di luce. I modelli di riflessione sono presentati di seguito.
+\begin{enumerate}
+	\item \textbf{Riflessione diffusa} %TODO: riflessione diffusa
+	\item \textbf{Riflessione speculare} %TODO: riflessione diffusa
+\end{enumerate}
+
+\section{Modelli di shading}
     
 %\section{Document styling}
 %
