@@ -73,7 +73,7 @@
     	\item \textbf{Luce ambientale}. Questa luce è una sorgente di luce non direzione la cui luce è emessa da ogni direzione. La sua intensità è indipendente da tutte le sue caratteristiche, come posizione e orientamento.
     		\begin{figure}[H]
         		\centering
-       			\includegraphics[width=0.3\columnwidth]{Figures/01.png}
+       			\includegraphics[width=0.6\columnwidth]{Figures/01.png}
        	 		\caption{Luce ambientale}
         		\label{fig:figure}
 			\end{figure}
@@ -81,7 +81,7 @@
     	\item \textbf{Luce puntiforme}. \'E una sorgente di luce che non emette la stessa quantità di luce proveniente da tutte le direzioni, infatti un oggetto quanto è più vicino ad essa tanto è più luminoso. L'intensità della sorgente è quindi dipendente dalla distanza e dalla angolazione. \'E caratterizzata da colore, intensità, posizione e funzione di decadimento.
     		\begin{figure}[H]
         		\centering
-        		\includegraphics[width=0.3\columnwidth]{Figures/02.png}
+        		\includegraphics[width=0.6\columnwidth]{Figures/02.png}
         		\caption{Luce puntiforme}
        			\label{fig:figure}
 			\end{figure}   
@@ -89,14 +89,14 @@
     	\item \textbf{Luce direzionale}. Tale tipo è prodotta da una sorgente di luce da una distanza infinita dalla scena. Tutti i raggi di luce si espandano in una singola direzione e con la stessa intensità ovunque. \'E caratterizzata da colore, intensità e direzione.
     		\begin{figure}[H]
         		\centering
-        		\includegraphics[width=0.3\columnwidth]{Figures/03.png}
+        		\includegraphics[width=0.6\columnwidth]{Figures/03.png}
         		\caption{Luce direzionale}
         		\label{fig:figure}
 			\end{figure}
     	\item \textbf{Spotlight}. La luce si irradia in un cono con più luce al centro di esso. Questa luce è fissata all'asse primario di direzione con una restrizione su di essa. \'E caratterizzata come un punto di propagazione, un asse di direzione, un raggio intorno all'asse e la possibilità di una funzione di decadimento radiale. 
     		\begin{figure}[H]
 		        \centering
-		        \includegraphics[width=0.3\columnwidth]{Figures/04.png}
+		        \includegraphics[width=0.6\columnwidth]{Figures/04.png}
 		        \caption{Spotlight}
 		        \label{fig:figure}
 			\end{figure}
@@ -105,8 +105,53 @@
 \section{Modelli di riflessione}
 L'obiettivo principale dello shading è la produzione di un risultato accettabile quando la superficie dell'oggetto è affetta dai raggi di luce. I modelli di riflessione sono presentati di seguito.
 \begin{enumerate}
-	\item \textbf{Riflessione diffusa} %TODO: riflessione diffusa
-	\item \textbf{Riflessione speculare} %TODO: riflessione diffusa
+	\item \textbf{Riflessione diffusa} Tale modello di riflessione diffonde la luce uniformemente in tutte le direzioni. In accordo con la legge di Lambert si ha che la diffusione del riflesso è proporzionale al coseno dell'angolo $\theta$ compreso tra la normale $N$ e la direzione della sorgente $L$. 
+		\begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.6\columnwidth]{Figures/05.png}
+	        \caption{Riflessione diffusa}
+	        \label{fig:figure}
+		\end{figure}
+		Da qui
+		\begin{equation*}
+			\cos{\theta} = L \cdot N
+		\end{equation*}
+		E considerando il coefficiente di riflessione $k_d$, con $0\leq k_d \leq 1$, si ha
+		\begin{equation*}
+			R_d = k_d \cdot L \cdot N
+		\end{equation*}
+		Volendo considerare l'attenuazione della luce, si deve far riferimento alla distanze che essa percorre $d$. Quindi il termine di attenuazione quadratico è
+		\begin{equation*}
+			R_d = \frac{k_d}{A + BD + C(D \cdot D)}(L \cdot N)
+		\end{equation*}
+		E quindi
+		\begin{equation*}
+			I_d = \frac{k_d}{A + AD + A(D\cdot D)}(L \cdot N)
+		\end{equation*}
+	\item \textbf{Riflessione speculare} Tale modello produce una riflessione luminosa sulla superficie dell'oggetto.
+		\begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.6\columnwidth]{Figures/06.png}
+	        \caption{Riflessione speculare}
+	        \label{fig:figure}
+		\end{figure} 
+		L'angolo $\phi$ compreso tra la direzione della riflessione $r$ e la direzione $\nu$ dell'osservatore è affetto da una quantità di luce speculare. Il modello Phong stabilisce
+		\begin{equation*}
+			R_s = k_s \cos{^n}{\phi}
+		\end{equation*}
+		per coefficiente $k_s$, con $0 \leq k \leq 1$. L'esponente $n$ è il coefficiente di lucentezza. All'incrementare di $n$, la luce riflessa si concentra in una regione superficiale più piccola, centrata in $r$. Valori tra il 100 e il 500 corrispondono a superfici metalliche, valori più piccoli corrispondono a ad illuminazioni più ampie. Quindi
+		\begin{equation*}
+			R_s = k_s(r \cdot \nu )^n
+		\end{equation*}
+		Una distanza viene moltiplicata similmente alle riflessioni diffuse.\\
+		La combinazione di tre tipi di riflessione danno
+		\begin{equation*}
+			I=\frac{1}{A + BD + C(D \cdot D)}(K_d(L \cdot N)L_d + k_s(r \cdot \nu)nL_s) + K_aL_a
+		\end{equation*}
+		La direzione della riflessione $r$ è semplice da $n$ e $I$, assumendo che $n$ sia un'unità di lunghezza, inoltre si vede che
+		\begin{equation*}
+			\frac{L+r}{2}=(L \cdot n)n \implies r = 2(L \cdot n)n - L
+		\end{equation*}
 \end{enumerate}
 
 \section{Modelli di shading}
