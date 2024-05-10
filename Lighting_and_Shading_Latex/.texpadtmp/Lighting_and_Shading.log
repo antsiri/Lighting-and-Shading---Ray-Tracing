@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  10 MAY 2024 20:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  10 MAY 2024 20:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1719,60 +1719,61 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {U}});
 (lettrine.sty)             reported on input line 71.
-<Figures/01.png, id=17, 205.76875pt x 177.66376pt>
+<Figures/01.png, id=19, 205.76875pt x 177.66376pt>
 File: Figures/01.png Graphic file (type png)
 <use Figures/01.png>
 Package pdftex.def Info: Figures/01.png  used on input line 76.
 (pdftex.def)             Requested size: 153.41435pt x 132.4613pt.
-<Figures/02.png, id=18, 245.91875pt x 212.795pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<Figures/02.png, id=20, 245.91875pt x 212.795pt>
 File: Figures/02.png Graphic file (type png)
 <use Figures/02.png>
 Package pdftex.def Info: Figures/02.png  used on input line 84.
 (pdftex.def)             Requested size: 153.41435pt x 132.75626pt.
-<Figures/03.png, id=19, 205.76875pt x 177.66376pt>
+<Figures/03.png, id=21, 205.76875pt x 177.66376pt>
 File: Figures/03.png Graphic file (type png)
 <use Figures/03.png>
 Package pdftex.def Info: Figures/03.png  used on input line 92.
 (pdftex.def)             Requested size: 153.41435pt x 132.4613pt.
-<Figures/04.png, id=20, 271.0125pt x 290.08376pt>
+<Figures/04.png, id=22, 271.0125pt x 290.08376pt>
 File: Figures/04.png Graphic file (type png)
 <use Figures/04.png>
 Package pdftex.def Info: Figures/04.png  used on input line 99.
 (pdftex.def)             Requested size: 153.41435pt x 164.21631pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.64998pt on input line 103.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.64998pt on input line 103.
-Package pbalance Info: Page "naturally" balanced, doing nothing on input line 103.
  [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}
 
 
  <./Figures/01.png> <./Figures/02.png> <./Figures/03.png>]
-<Figures/05.png, id=49, 1027.84pt x 722.7pt>
+<Figures/05.png, id=51, 1027.84pt x 722.7pt>
 File: Figures/05.png Graphic file (type png)
 <use Figures/05.png>
 Package pdftex.def Info: Figures/05.png  used on input line 111.
 (pdftex.def)             Requested size: 153.41435pt x 107.85997pt.
-<Figures/06.png, id=51, 1610.015pt x 514.92375pt>
+<Figures/06.png, id=53, 1610.015pt x 514.92375pt>
 File: Figures/06.png Graphic file (type png)
 <use Figures/06.png>
 Package pdftex.def Info: Figures/06.png  used on input line 134.
 (pdftex.def)             Requested size: 153.41435pt x 49.05968pt.
-<Figures/07.png, id=52, 1505.625pt x 602.25pt>
+<Figures/07.png, id=54, 1505.625pt x 602.25pt>
 File: Figures/07.png Graphic file (type png)
 <use Figures/07.png>
 Package pdftex.def Info: Figures/07.png  used on input line 167.
 (pdftex.def)             Requested size: 178.98082pt x 71.58684pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 403.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 403.
- [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathscr.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc} <./Figures/04.png> <./Figures/05.png> <./Figures/06.png> <./Figures/07.png>] 
+(Font)              scaled to size 6.64998pt on input line 389.
+ [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathscr.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc} <./Figures/04.png> <./Figures/05.png> <./Figures/06.png> <./Figures/07.png>] [3
+pdfTeX warning: \pdfendlink ended up in different nesting level than \pdfstartlink
+] 
 enddocument/afterlastpage: lastpage setting LastPage.
-Package pbalance Info: Done balancing page 2 on input line 403.
+Package pbalance Info: Done balancing page 3 on input line 405.
 (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1787,18 +1788,18 @@ Package logreq Info: Writing requests to 'Lighting_and_Shading.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68002 strings out of 474116
- 1486324 string characters out of 5743682
- 2629716 words of memory out of 5000000
- 89288 multiletter control sequences out of 15000+600000
+ 68005 strings out of 474116
+ 1486384 string characters out of 5743682
+ 2630698 words of memory out of 5000000
+ 89289 multiletter control sequences out of 15000+600000
  698725 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,12n,143p,1078b,1484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,12n,143p,1078b,1712s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (2 pages, 1617046 bytes).
+Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (3 pages, 1617668 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 65624 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 65632 words of extra memory for PDF output out of 74296 (max. 10000000)
 
