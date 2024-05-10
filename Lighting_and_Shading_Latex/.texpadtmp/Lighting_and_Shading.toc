@@ -4,5 +4,5 @@
 \contentsline {section}{\numberline {2}Le sorgenti di luce}{1}{section.2}%
 \contentsline {section}{\numberline {3}Modelli di riflessione}{2}{section.3}%
 \contentsline {section}{\numberline {4}Modelli di shading}{2}{section.4}%
-\contentsline {section}{Riferimenti}{2}{section.4}%
+\contentsline {section}{Riferimenti}{2}{figure.caption.7}%
 \contentsfinish 

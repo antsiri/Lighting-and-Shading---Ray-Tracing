@@ -155,7 +155,19 @@ L'obiettivo principale dello shading è la produzione di un risultato accettabil
 \end{enumerate}
 
 \section{Modelli di shading}
-    
+I modelli di shading sono utilizzati per ottenere il modello di illuminazione desiderato. Modelli di shading efficienti per la superficie definita da un poligono si possono descrivere come seguono.
+\begin{enumerate}
+	\item \textbf{Constant shading} Questo modello è il più semplice modello di shading anche conosciuto come faceted shading o flat shading. Lo stesso colore è applicato su ogni intero poligono con un rendering veloce. L'equità della luce è usata una sola volta per poligono. Data una singola normale al piano, l'equazione della luce e le proprietà del materiale sono usate per generare un singolo colore. Il poligono avrà tale colore.
+		
+	\item \textbf{Gouraud shading} Questo modello è anche chiamato intensity interpolation shading o color interpolation shading. I colori sono interpolati attraverso il poligono e vi è la necessità di identificare ogni vertice. Il processo di rendering è più lento rispetto al modello flat. L'equità della luce è applicata ad ogni vertice e anche ogni colore è determinato dalla quantità di luce con le proprietà del materiale. La Scan-line interpolation è usata per assegnare un colore ad ogni punto di proiezione del poligono come la media pesata dei colori di dati vertici.
+	\item \textbf{Phong shading} Tale modello è più realistico degli altri perché il suo algoritmo considera l'unione delle normali dei vertici ad ogni punto del poligono per avere una normale locale. Inoltre, il calcolo è applicato per avere un'illuminazione totale nel rendering.
+\end{enumerate}
+\begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.7\columnwidth]{Figures/07.png}
+	        \caption{Flat, Gouraud e Phong shading}
+	        \label{fig:figure}
+		\end{figure}
 %\section{Document styling}
 %
 %    \subsection{Title}
