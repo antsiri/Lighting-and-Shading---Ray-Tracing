@@ -49,6 +49,31 @@
       \verb https://www.academia.edu/33137083/Computer_Graphics_Fundamental_Lighting_and_Shading
       \endverb
     \endentry
+    \entry{Peddie_2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e4fcc8fdc2ce339c90f2163deb4b5756}{%
+           family={Peddie},
+           familyi={P\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e4fcc8fdc2ce339c90f2163deb4b5756}
+      \strng{fullhash}{e4fcc8fdc2ce339c90f2163deb4b5756}
+      \strng{bibnamehash}{e4fcc8fdc2ce339c90f2163deb4b5756}
+      \strng{authorbibnamehash}{e4fcc8fdc2ce339c90f2163deb4b5756}
+      \strng{authornamehash}{e4fcc8fdc2ce339c90f2163deb4b5756}
+      \strng{authorfullhash}{e4fcc8fdc2ce339c90f2163deb4b5756}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ray Tracing: A tool for all}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
