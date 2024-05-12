@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  11 MAY 2024 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  12 MAY 2024 11:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1765,13 +1765,21 @@ File: Figures/07.png Graphic file (type png)
 <use Figures/07.png>
 Package pdftex.def Info: Figures/07.png  used on input line 168.
 (pdftex.def)             Requested size: 178.98082pt x 71.58684pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 390.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 175.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 390.
- [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathscr.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc} <./Figures/04.png> <./Figures/05.png> <./Figures/06.png> <./Figures/07.png>] [3] 
+(Font)              scaled to size 6.64998pt on input line 175.
+[2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathscr.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc} <./Figures/04.png> <./Figures/05.png> <./Figures/06.png> <./Figures/07.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3] 
 enddocument/afterlastpage: lastpage setting LastPage.
-Package pbalance Info: Done balancing page 3 on input line 406.
+Package pbalance Info: Done balancing page 3 on input line 413.
 (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1786,15 +1794,15 @@ Package logreq Info: Writing requests to 'Lighting_and_Shading.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68014 strings out of 474116
- 1486595 string characters out of 5743682
- 2630890 words of memory out of 5000000
+ 68024 strings out of 474116
+ 1486739 string characters out of 5743682
+ 2631896 words of memory out of 5000000
  89294 multiletter control sequences out of 15000+600000
- 698850 words of font info for 210 fonts, out of 8000000 for 9000
+ 699635 words of font info for 215 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,12n,143p,1078b,1781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,12n,143p,1095b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (3 pages, 1619620 bytes).
+Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (3 pages, 1620673 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
