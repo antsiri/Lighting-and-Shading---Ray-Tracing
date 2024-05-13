@@ -104,9 +104,9 @@
 \end{enumerate}
 
 \section{Modelli di riflessione}
-L'obiettivo principale dello shading è la produzione di un risultato accettabile quando la superficie dell'oggetto è affetta dai raggi di luce. I modelli di riflessione sono presentati di seguito.
+\taustart{L'}obiettivo principale dello shading è la produzione di un risultato accettabile quando la superficie dell'oggetto è affetta dai raggi di luce. I modelli di riflessione sono presentati di seguito.
 \begin{enumerate}
-	\item \textbf{Riflessione diffusa} Tale modello di riflessione diffonde la luce uniformemente in tutte le direzioni. In accordo con la legge di Lambert si ha che la diffusione del riflesso è proporzionale al coseno dell'angolo $\theta$ compreso tra la normale $N$ e la direzione della sorgente $L$. 
+	\item \textbf{Riflessione diffusa}. Tale modello di riflessione diffonde la luce uniformemente in tutte le direzioni. In accordo con la legge di Lambert si ha che la diffusione del riflesso è proporzionale al coseno dell'angolo $\theta$ compreso tra la normale $N$ e la direzione della sorgente $L$. 
 		\begin{figure}[H]
 	        \centering
 	        \includegraphics[width=0.6\columnwidth]{Figures/05.png}
@@ -129,7 +129,7 @@ L'obiettivo principale dello shading è la produzione di un risultato accettabil
 		\begin{equation*}
 			I_d = \frac{k_d}{A + AD + A(D\cdot D)}(L \cdot N)
 		\end{equation*}
-	\item \textbf{Riflessione speculare} Tale modello produce una riflessione luminosa sulla superficie dell'oggetto.
+	\item \textbf{Riflessione speculare}. Tale modello produce una riflessione luminosa sulla superficie dell'oggetto.
 		\begin{figure}[H]
 	        \centering
 	        \includegraphics[width=0.6\columnwidth]{Figures/06.png}
@@ -156,104 +156,61 @@ L'obiettivo principale dello shading è la produzione di un risultato accettabil
 \end{enumerate}
 
 \section{Modelli di shading}
-I modelli di shading sono utilizzati per ottenere il modello di illuminazione desiderato. Modelli di shading efficienti per la superficie definita da un poligono si possono descrivere come seguono.
+\taustart{I} modelli di shading sono utilizzati per ottenere il modello di illuminazione desiderato. Modelli di shading efficienti per la superficie definita da un poligono si possono descrivere come seguono.
 \begin{enumerate}
-	\item \textbf{Constant shading} Questo modello è il più semplice modello di shading anche conosciuto come faceted shading o flat shading. Lo stesso colore è applicato su ogni intero poligono con un rendering veloce. L'equità della luce è usata una sola volta per poligono. Data una singola normale al piano, l'equazione della luce e le proprietà del materiale sono usate per generare un singolo colore. Il poligono avrà tale colore.
+	\item \textbf{Constant shading}. Questo modello è il più semplice modello di shading anche conosciuto come faceted shading o flat shading. Lo stesso colore è applicato su ogni intero poligono con un rendering veloce. L'equità della luce è usata una sola volta per poligono. Data una singola normale al piano, l'equazione della luce e le proprietà del materiale sono usate per generare un singolo colore. Il poligono avrà tale colore.
 		
-	\item \textbf{Gouraud shading} Questo modello è anche chiamato intensity interpolation shading o color interpolation shading. I colori sono interpolati attraverso il poligono e vi è la necessità di identificare ogni vertice. Il processo di rendering è più lento rispetto al modello flat. L'equità della luce è applicata ad ogni vertice e anche ogni colore è determinato dalla quantità di luce con le proprietà del materiale. La Scan-line interpolation è usata per assegnare un colore ad ogni punto di proiezione del poligono come la media pesata dei colori di dati vertici.
-	\item \textbf{Phong shading} Tale modello è più realistico degli altri perché il suo algoritmo considera l'unione delle normali dei vertici ad ogni punto del poligono per avere una normale locale. Inoltre, il calcolo è applicato per avere un'illuminazione totale nel rendering.
+	\item \textbf{Gouraud shading}. Questo modello è anche chiamato intensity interpolation shading o color interpolation shading. I colori sono interpolati attraverso il poligono e vi è la necessità di identificare ogni vertice. Il processo di rendering è più lento rispetto al modello flat. L'equità della luce è applicata ad ogni vertice e anche ogni colore è determinato dalla quantità di luce con le proprietà del materiale. La Scan-line interpolation è usata per assegnare un colore ad ogni punto di proiezione del poligono come la media pesata dei colori di dati vertici.
+	\item \textbf{Phong shading}. Tale modello è più realistico degli altri perché il suo algoritmo considera l'unione delle normali dei vertici ad ogni punto del poligono per avere una normale locale. Inoltre, il calcolo è applicato per avere un'illuminazione totale nel rendering.
 \end{enumerate}
 \begin{figure}[H]
-	        \centering
-	        \includegraphics[width=0.7\columnwidth]{Figures/07.png}
-	        \caption{Flat, Gouraud e Phong shading}
-	        \label{fig:figure}
-		\end{figure}
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/07.png}
+    \caption{Flat, Gouraud e Phong shading}
+    \label{fig:figure}
+\end{figure}
+
+%TODO parte di Ciro, cap 2-3		
 
 \section{Il modello del Ray Tracing}
-L'ambizione degli artisti, dei designers, degli ingegneri è sempre stata la simulazione dell'immagine di una scena, una storia, un prodotto, un palazzo prima che sia effettivamente realizzati e costruiti - architetti devono costruire modelli in scala, produttori di film e video-game devono utilizzare storyboards per provare e trasmettere le sensazioni di un film o un video-game. E gli inserzionisti vogliono creare interpretazioni perfette dei loro prodotti nella migliore luce possibile. Inoltre i designer di prodotti e macchinari vogliono trovare le debolezze di un progetto prima che esso venga effettivamente costruito - direttori di film vogliono vedere il risultato finale prima dell'arduo lavoro di post-produzione, i produttori vogliono mostrare a potenziali clienti il prodotto finale per stimolarne la domanda. Il test di tali idee è chiamato virtual prototyping nella manifattura e pre-visualization nell'industria cinematografica. Vi è quindi la necessità di disporre di queste immagini, o video, a basso costo e in poco tempo.\\
+\taustart{L'}ambizione degli artisti, dei designers, degli ingegneri è sempre stata la simulazione dell'immagine di una scena, una storia, un prodotto, un palazzo prima che sia effettivamente realizzati e costruiti - architetti devono costruire modelli in scala, produttori di film e video-game devono utilizzare storyboards per provare e trasmettere le sensazioni di un film o un video-game. E gli inserzionisti vogliono creare interpretazioni perfette dei loro prodotti nella migliore luce possibile. Inoltre i designer di prodotti e macchinari vogliono trovare le debolezze di un progetto prima che esso venga effettivamente costruito - direttori di film vogliono vedere il risultato finale prima dell'arduo lavoro di post-produzione, i produttori vogliono mostrare a potenziali clienti il prodotto finale per stimolarne la domanda. Il test di tali idee è chiamato virtual prototyping nella manifattura e pre-visualization nell'industria cinematografica. Vi è quindi la necessità di disporre di queste immagini, o video, a basso costo e in poco tempo.\\
+
+\section{L'equazione di rendering}
+\taustart{N}ella computer graphics, l'equazione di rendering è un'equazione integrale nella quale la radianza di equilibrio che lascia un punto è la somma della radianza emessa più la radianza riflessa sotto un'approssimazione dell'ottica geometrica.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/08.png}
+    \caption{Equazione di rendering}
+    \label{fig:figure}
+\end{figure}
+Esistono svariate tecniche di rendering nella computer graphics che cercano di risolvere tale equazione.
+L'equazione di rendering descrive la quantità totale di luce emessa da un punto $x$ lungo una particolare direzione di osservazione, data una funzione per la luce in entrata e una funzione di distribuzione bidirezionale di riflettenza (BRDF), dove,
+\begin{itemize}
+	\item $x$ è una posizione nello spazio
+	\item $w_o$ è la direzione della luce in uscita
+	\item $\Omega$ è l'emisfero unitario centrato intorno $\{n\}$ contenente tutti i valori possibili di $w_i$
+	\item $w_i$ è il fattore di indebolimento dell'irraggiamento verso l'esterno a causa dell'angolo di incidenza, poiché il flusso luminoso si diffonde su una superficie la cui area è più grande dell'area proiettata perpendicolare al raggio
+\end{itemize}
+Risolvere l'equazione di rendering per ogni scena è la prima sfida per ottenere un rendering realistico. \\
+Uno degli approcci è basato sui metodi degli elementi finiti, che ha portato all'algoritmo di radiosità. Un altro approccio utilizzando il metodo Monte Carlo ha portato a diversi algoritmi inclusi Path Tracing, photon mapping, il Metropolis light transport e molti altri. Monte Carlo ray tracing richiede come input la descrizione di una scena altamente dettagliata e basata sulla fisica delle cose. L'algoritmo applica le leggi fisica per simulare la propagazione della luce attraverso la scena, piuttosto che approssimazioni ad hoc per i fenomeni visivi. Questo tipo di simulazione richiede modelli geometrici estremamente dettagliati. Inoltre, rendering fotorealistici richiedono che le proprietà fisiche del materiale superficiale siano modellate correttamente, in modo da descrivere come la luce si disperde quando la colpisce.
+
+\section{Scanline rendering}
+\taustart{L}o Scanline rendering è un algoritmo per la determinazione della superficie visibile che lavora riga per riga rispetto a poligono per poligono o pixel per pixel.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/09.png}
+    \caption{Algoritmo Scanline}
+    \label{fig:figure}
+\end{figure}
+Tutti i poligoni da renderizzare sono ordinate dall'alto sulla asse delle ordinate in ordine di apparizione. Poi, per ogni riga o scanline dell'immagine è calcolato utilizzando l'intersezione di una scanline con i poligoni nella parte anteriore della lista ordinata, mentre quest'ultima viene aggiornata scartando i poligoni non più visibile man mano che la scanline attiva avanza verso il basso dell'immagine.\\
+Il vantaggio principale di questo metodo è che l'ordine dei vertici lungo la normale del piano di scansione riduce il numero di comparazioni tra i bordi. Un ulteriore vantaggio rispetto allo z-buffering è che il processo dei pixel visibili è mantenuto al minimo assoluto. Attraverso l'ordinamento front-to-back utilizzato nei moderni sistemi z-buffer, si possono realizzare benefici simile. 
+
+\subsection{Z-buffering}
+%TODO
+\subsection{Algoritmo del pittore}
+%TODO
 
 
-
-
-
-
-%\section{Document styling}
-%
-%    \subsection{Title}
-%	
-%        The \verb*|\maketitle| command generates the title and author information section, including the professor name or other information, and affiliations. The title can be modified in \textit{tau class} code in the \textit{title style} section. 
-% 
-%        By default, \textit{tau class} centers the title. However, you can change \verb*|\centering| to \verb*|\raggedright| in \verb*|\renewcommand{maketitle}| to move the title to the left or, modify it to your own preferences.
-%	
-%    \subsection{Abstract}
-%	
-%        The abstract and keywords are defined using the \verb*|\keywords| and \verb*|\begin{abstract} \end{abstract}| commands respectively. For the abstract to appear, make sure the \verb|\taucontent| command is always included after the beginning of the document.
-%
-%    \subsection{Table of contents}
-%
-%        The \textit{tau class} provides a table of contents. Each level of the ToC provides a preview of the content and its location in the document.
-%
-%    \subsection{Tau start}
-%
-%        We included the \verb*|\taustart{}| command, which provides a personalized lettrine for the beginning of a paragraph.
-%        
-%    \subsection{Caption}
-%
-%        \subsubsection{Figures}
-%
-%            The provided \verb*|\captionsetup[figure]| command customizes the appearance of captions for figures in \LaTeX\ documents. For example, in Fig. \ref{fig:figure}, shows an example figure.
-%			
-%            \begin{figure}[H]
-%                \centering
-%                \includegraphics[width=0.8\columnwidth]{Figures/Example.pdf}
-%                \caption{Example figure (obtained from \textit{PGFPlots - A LaTeX package to create plots}. [Online]. Available: \url{https://pgfplots.sourceforge.net/}).}
-%                \label{fig:figure}
-%            \end{figure}
-%
-%        \subsubsection{Tables}
-%    
-%            The \verb*|\captionsetup[table]| command customizes the appearance of the captions for tables in the document. The \verb*|\tabletext{}| is used to add notes to tables easily. Table \ref{tab:table}, shows an example table.
-%            
-%            \begin{table}[H]
-%                \centering
-%                \caption{Small table example.}
-%    		\label{tab:table}
-%                \begin{tabular}{cc}
-%            	\toprule
-%                    \textbf{Column 1} & \textbf{Column 2} \\
-%                    \midrule
-%                    Data 1 & Data 2 \\
-%                    Data 3 & Data 4 \\
-%                    \bottomrule
-%                \end{tabular}
-%                    
-%                \tabletext{Note: I'm a table text for additional information.}
-%                    
-%            \end{table}
-%
-%    \subsection{Equation}
-%    
-%        Equation \ref{ec:equation} shows an example equation. 
-%
-%	\begin{equation} \label{ec:equation}
-%            \frac{\hbar^2}{2m}\nabla^2\Psi + V(\mathbf{r})\Psi = -i\hbar \frac{\partial\Psi}{\partial t}
-%	\end{equation} 
-%
-%        The \textbf{amssymb} package was not necessary to include, because the stix2 font incorporates mathematical symbols for writing quality equations. In case you choose another font, uncomment the package in \textit{tau class} code.
-%
-%        If you want to change the values that adjust the spacing above and below in the equations, go to \textit{tau class-math packages} section and play with \verb|\setlength{\eqskip}{6.5pt}| value until the preferred spacing is set. See appendix for more information.
-%
-%\section{Environment}
-%
-%    The \textit{tau class} includes custom environments designed to enhance the presentation of information within documents. Among these custom environments are \textbf{tauenv}, \textbf{info} and \textbf{note}.
-%
-%    \begin{tauenv}[frametitle=Custom title]
-%        This is an example of the custom title environment. To add a title type \verb|[frametitle=Custom title]| next to the beginning of the environment (as shown in this example).
-%    \end{tauenv}
-%
-%    One of the main features of the info and note environment is that they automatically change the language of their titles (currently English and Spanish).
-%
 %\section{Coding}
 %
 %    \textit{Tau class} includes the \textit{listings} package, which offers versatile and customizable features for typesetting code snippets in \LaTeX\ documents. Specifically for C, C++, \LaTeX\ and Matlab codes. 
@@ -395,18 +352,6 @@ L'ambizione degli artisti, dei designers, degli ingegneri è sempre stata la sim
 \addcontentsline{toc}{section}{Riferimenti}
 \nocite{*}
 \printbibliography
-
-%----------------------------------------------------------
-
-%\begin{center}
-%	\vskip10pt
-%	Enjoy writing with tau \LaTeX\ class $\blacksmiley$ \\ 
-%	\vskip10pt
-%	\textit{Contact:} \\
-%	\faLink\ \href{https://sites.google.com/view/memo-notess/p%C3%A1gina-principal}{https://sites.google.com/memo-notess} \\
-%	\faEnvelope[regular]\ memo.notess1@gmail.com \\
-%	\faInstagram\ memo.notess\\
-%\end{center}
 
 %----------------------------------------------------------
 

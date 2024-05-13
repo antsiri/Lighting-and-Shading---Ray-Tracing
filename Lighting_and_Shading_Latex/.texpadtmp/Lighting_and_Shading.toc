@@ -5,5 +5,9 @@
 \contentsline {section}{\numberline {3}Modelli di riflessione}{2}{section.3}%
 \contentsline {section}{\numberline {4}Modelli di shading}{2}{section.4}%
 \contentsline {section}{\numberline {5}Il modello del Ray Tracing}{2}{section.5}%
-\contentsline {section}{Riferimenti}{3}{section.5}%
+\contentsline {section}{\numberline {6}L'equazione di rendering}{3}{section.6}%
+\contentsline {section}{\numberline {7}Scanline rendering}{3}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Z-buffering}{3}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Algoritmo del pittore}{3}{subsection.7.2}%
+\contentsline {section}{Riferimenti}{3}{subsection.7.2}%
 \contentsfinish 
