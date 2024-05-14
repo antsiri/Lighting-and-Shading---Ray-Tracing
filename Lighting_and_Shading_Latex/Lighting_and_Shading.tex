@@ -206,9 +206,18 @@ Tutti i poligoni da renderizzare sono ordinate dall'alto sulla asse delle ordina
 Il vantaggio principale di questo metodo è che l'ordine dei vertici lungo la normale del piano di scansione riduce il numero di comparazioni tra i bordi. Un ulteriore vantaggio rispetto allo z-buffering è che il processo dei pixel visibili è mantenuto al minimo assoluto. Attraverso l'ordinamento front-to-back utilizzato nei moderni sistemi z-buffer, si possono realizzare benefici simile. 
 
 \subsection{Z-buffering}
-%TODO
+Lo Z-buffering, anche noto come depth buffering, è la gestione delle coordinate di profondità delle immagini nella 3D graphics, fatta di solito a livello hardware. Quando si proietta un oggetto sullo schermo con un motore di 3D-rendering, la profondità (z-value) del pixel generato nell'immagine proiettata viene memorizzata in un buffer (z-buffer). Un z-value corrisponde alla misura della distanza perpendicolare da un pixel sul piano di proiezione alla sua corrispondete coordinata 3D su un poligono nello spazio. Lo Z-buffer ha la stessa struttura di un immagine, ovvero un 2D-array, con la sola differenza che memorizza uno z-value per ogni pixel dello schermo invece che dei pixel dei dati. Ha la stesse dimensioni di uno screen buffer, eccetto quando sono utilizzati Z-buffer multipli. \\
+Quando vediamo un immagine contenente oggetti o superfici parzialmente o totalmente opachi, non è possibile vedere completamente questi oggetti sia che siano lontani dall'osservatore sia che siano dietro altri oggetti. L'identificazione e la rimozioni di tali oggetti è chiamato problema delle superfici nascoste (hidden surface problem). Per migliorare il tempo di rendering, le superfici nascoste vengono rimosse prima che l'immagina sia memorizzata nel z-buffer, in modo che quest'ultimo calcoli lo z-value del pixel corrispondente al primo oggetto che compare e lo compara con lo z-value del pixel nella stessa posizione nel z-buffer corrispondente all'oggetto che è più vicino all'osservatore per trovare la sovrapposizione.
 \subsection{Algoritmo del pittore}
-%TODO
+L'algoritmo del pittore è una delle soluzioni più semplici al problema della visibilità nella 3D computer graphics. Quando proietti una scena 3D in un piano 2D, è necessario decidere quale  tra i poligoni è visibile. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/10.png}
+    \caption{Algoritmo del pittore}
+    \label{fig:figure}
+\end{figure}
+L'algoritmo del pittore ordina tutti i poligoni nella scena partendo dalla profondità e poi li disegna in questo ordine, dal più lontano al più vicino. Si disegna sulle parti non visibili, al costo di avere oggetti già disegnati al nascosti. L'ordine usato dall'algoritmo è chiamato depth order: se un oggetto oscura la parte di un altro, allora il primo oggetto disegnato dopo il secondo viene oscurato. 
+
 
 
 %\section{Coding}

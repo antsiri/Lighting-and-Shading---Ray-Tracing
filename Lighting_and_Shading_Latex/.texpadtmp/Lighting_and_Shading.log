@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  13 MAY 2024 17:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  14 MAY 2024 12:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1511,6 +1511,12 @@ LaTeX Warning: Label `fig:figure' multiply defined.
 
 LaTeX Warning: Label `fig:figure@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
 )
 \openout1 = `Lighting_and_Shading.aux'.
 
@@ -1763,12 +1769,12 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 18.42099pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L'}});
 (lettrine.sty)             reported on input line 107.
-<Figures/05.png, id=63, 1027.84pt x 722.7pt>
+<Figures/05.png, id=64, 1027.84pt x 722.7pt>
 File: Figures/05.png Graphic file (type png)
 <use Figures/05.png>
 Package pdftex.def Info: Figures/05.png  used on input line 112.
 (pdftex.def)             Requested size: 153.41435pt x 107.85997pt.
-<Figures/06.png, id=65, 1610.015pt x 514.92375pt>
+<Figures/06.png, id=66, 1610.015pt x 514.92375pt>
 File: Figures/06.png Graphic file (type png)
 <use Figures/06.png>
 Package pdftex.def Info: Figures/06.png  used on input line 135.
@@ -1777,7 +1783,7 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {I}});
 (lettrine.sty)             reported on input line 159.
-<Figures/07.png, id=66, 1505.625pt x 602.25pt>
+<Figures/07.png, id=67, 1505.625pt x 602.25pt>
 File: Figures/07.png Graphic file (type png)
 <use Figures/07.png>
 Package pdftex.def Info: Figures/07.png  used on input line 168.
@@ -1800,7 +1806,7 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {N}});
 (lettrine.sty)             reported on input line 179.
-<Figures/08.png, id=87, 556.32843pt x 299.61937pt>
+<Figures/08.png, id=88, 556.32843pt x 299.61937pt>
 File: Figures/08.png Graphic file (type png)
 <use Figures/08.png>
 Package pdftex.def Info: Figures/08.png  used on input line 182.
@@ -1816,12 +1822,22 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L}});
 (lettrine.sty)             reported on input line 198.
-<Figures/09.png, id=88, 702.625pt x 635.37375pt>
+<Figures/09.png, id=89, 702.625pt x 635.37375pt>
 File: Figures/09.png Graphic file (type png)
 <use Figures/09.png>
 Package pdftex.def Info: Figures/09.png  used on input line 201.
 (pdftex.def)             Requested size: 178.98082pt x 161.8485pt.
- [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc} <./Figures/08.png> <./Figures/09.png>] 
+<Figures/10.png, id=90, 1079.03125pt x 270.00874pt>
+File: Figures/10.png Graphic file (type png)
+<use Figures/10.png>
+Package pdftex.def Info: Figures/10.png  used on input line 215.
+(pdftex.def)             Requested size: 178.98082pt x 44.78435pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc} <./Figures/08.png> <./Figures/09.png>] [4
+
+ <./Figures/10.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
 
 Package pbalance Warning: Could not balance, doing nothing.
@@ -1840,18 +1856,18 @@ Package logreq Info: Writing requests to 'Lighting_and_Shading.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68074 strings out of 474116
- 1487407 string characters out of 5743682
- 2632728 words of memory out of 5000000
- 89317 multiletter control sequences out of 15000+600000
- 701018 words of font info for 224 fonts, out of 8000000 for 9000
+ 68095 strings out of 474116
+ 1487733 string characters out of 5743682
+ 2634735 words of memory out of 5000000
+ 89324 multiletter control sequences out of 15000+600000
+ 701960 words of font info for 230 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,12n,143p,1121b,1484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,13n,143p,1121b,1484s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (3 pages, 1742200 bytes).
+Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (4 pages, 1775825 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 67722 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 67727 words of extra memory for PDF output out of 74296 (max. 10000000)
 
