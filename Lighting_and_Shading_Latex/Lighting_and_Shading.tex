@@ -218,8 +218,25 @@ L'algoritmo del pittore è una delle soluzioni più semplici al problema della v
 \end{figure}
 L'algoritmo del pittore ordina tutti i poligoni nella scena partendo dalla profondità e poi li disegna in questo ordine, dal più lontano al più vicino. Si disegna sulle parti non visibili, al costo di avere oggetti già disegnati al nascosti. L'ordine usato dall'algoritmo è chiamato depth order: se un oggetto oscura la parte di un altro, allora il primo oggetto disegnato dopo il secondo viene oscurato. 
 
-
-
+\section{Ray Tracing}
+Negli ultimi anni, la qualità delle immagini generate computazionalmente hanno raggiunto un livello di realismo tale che i rendering sono indistinti dalle fotografie.\\
+Nella computer graphics, il ray tracing è una tecnica di rendering per generare un'immagine tracciando il percorso della luce come pixel in un piano e simulando gli effetti dati dall'intersezione di tale percorso con gli oggetti virtuali. La tecnica può produrre un grado di realismo visivo molto alto, anche più alto a volte dei tipici metodi di rendering scanline ma con un alto costo computazionale. \\
+Avanzati effetti di shading possono rendere la visualizzazione più efficace. Il vantaggio, l'opportunità e l'obiettivo del ray tracing è quello di fornire ulteriori segnali visivi per una migliore visualizzazione degli oggetti 3D.\\
+Ci sono almeno quattro diversi raggi coinvolti nel ray tracing:
+\begin{itemize}
+	\item \textbf{Raggi oculari} che hanno origine dagli occhi.
+	\item \textbf{Raggi d'ombra}: dal punto di superficie alla sorgente di luce.
+	\item \textbf{Raggi di riflessione}: dal punto di superficie in direzione dello specchio.
+	\item \textbf{Raggi di trasmissione}: dal punto di superficie nella direzione di rifrazione.
+\end{itemize}
+L'algoritmo di ray tracing calcola il raggio dell'occhio dell'osservatore attraverso ogni pixel, calcola il punto di intersezione più vicina con una superficie di scena, quindi ombreggia quel punto calcolando i raggi d'ombra e genera i raggi riflessi e rifratti.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/11.png}
+    \caption{Raggi nel ray tracing}
+    \label{fig:figure}
+\end{figure}
+Il ray tracing ricorsivo simula la riflessione speculare e le ombre attraverso e fuori dalle superfici trasparenti. Può usare o impiegare l'illuminazione indiretta, a volte aree di sorgenti luminosa o altre influenze caustiche.
 %\section{Coding}
 %
 %    \textit{Tau class} includes the \textit{listings} package, which offers versatile and customizable features for typesetting code snippets in \LaTeX\ documents. Specifically for C, C++, \LaTeX\ and Matlab codes. 
