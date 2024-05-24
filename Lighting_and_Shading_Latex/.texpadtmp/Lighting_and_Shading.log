@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  23 MAY 2024 10:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  23 MAY 2024 21:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1847,9 +1847,7 @@ File: Figures/11.png Graphic file (type png)
 <use Figures/11.png>
 Package pdftex.def Info: Figures/11.png  used on input line 235.
 (pdftex.def)             Requested size: 178.98082pt x 115.99753pt.
- [4
-
- <./Figures/10.png> <./Figures/11.png>] 
+ [4 <./Figures/10.png> <./Figures/11.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
 
 Package pbalance Warning: Could not balance, doing nothing.
@@ -1868,18 +1866,18 @@ Package logreq Info: Writing requests to 'Lighting_and_Shading.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68109 strings out of 474116
- 1487979 string characters out of 5743682
+ 68112 strings out of 474116
+ 1488000 string characters out of 5743682
  2634723 words of memory out of 5000000
  89332 multiletter control sequences out of 15000+600000
  702272 words of font info for 232 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  137i,13n,143p,1121b,1484s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (4 pages, 2133952 bytes).
+Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (4 pages, 2134183 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
  67740 words of extra memory for PDF output out of 74296 (max. 10000000)
 
