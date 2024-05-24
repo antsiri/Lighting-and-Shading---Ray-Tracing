@@ -10,5 +10,6 @@
 \contentsline {subsection}{\numberline {7.1}Z-buffering}{3}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Algoritmo del pittore}{3}{subsection.7.2}%
 \contentsline {section}{\numberline {8}Ray Tracing}{4}{section.8}%
-\contentsline {section}{Riferimenti}{4}{Item.15}%
+\contentsline {section}{\numberline {9}Path Tracing}{4}{section.9}%
+\contentsline {section}{Riferimenti}{4}{section.9}%
 \contentsfinish 

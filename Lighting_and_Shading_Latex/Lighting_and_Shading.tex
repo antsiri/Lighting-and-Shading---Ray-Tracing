@@ -244,15 +244,31 @@ Il ray tracing in grandi linee può essere diviso in tre generali categorie:
 	\item Interactive
 	\item Real-time
 \end{enumerate}
+Off-line è usato ampiamente dagli studi cinematografici, pubblicitari e di design. Ha la qualità maggiore.\\
+Interactive ray tracing riduce il numeri di raggi in modo da avere comunque una buona immagine e allo stesso tempo di offrire all'utente la possibilità di manipolare il modello.\\
+Real-time ray tracing può essere realizzato, con alcune restrizioni, dall'assistenza di piccoli supercomputer.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/12.png}
+    \caption{Performance e qualità nei vari modi di ray tracing}
+    \label{fig:figure}
+\end{figure}
+Uno dei trucchi del ray tracing è quello di tracciare solo determinati elementi o oggetti all'interno di un'immagine ma, se fatto in modo giusto, si ha un immagine fisicamente corretta.  
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/13.png}
+    \caption{Stormtroopers (Star Wars) renderizzati con real-time ray tracing (Nvidia): il background non ha applicato il ray tracing, ne tanto meno lo necessita, ma il pavimento potrebbe dipendere dal materiale che il l'autore decida di utilizzare}
+    \label{fig:figure}
+\end{figure}
+Il ray tracing è capace di simulare una vasta varietà di effetti ottici, ad esempio riflessione, rifrazione e fenomeni di dispersione, ma non è necessariamente il metodo più realistico: metodi che includono tecniche addizionali posso dare simulazioni più accurate. \\
+Il ray tracing è imperfetto: immagini con un ray tracing basico sono molto pulite, quindi l'allineamento degli oggetti e il campionamento possono portare a pattern non intenzionali noti come pattern di moiré e aliasing. \\
+Il ray tracing dà colore per ogni possibile punto dell'immagine. Tuttavia un pixel quadrato contiene un numero infinito di punti e quei punti potrebbero non avere tutti lo stesso colore. Il campionamento viene utilizzato appunto per scegliere il colore di tale pixel, ma come è ben noto, il campionamento implica aliasing.
 
-%TODO: proseguire da pagina 42 del libro
+\section{Path Tracing}
+\taustart{I}l Path Tracing è un'estensione dell'algoritmo del ray tracing. Esso simula molti percorsi di luce per ogni pixel e ne valuta la media per calcolare il colore finale per ognuno di essi.\\
+Ogni volta che un raggio
 
-
-
-
-
-
-
+%TODO: finire Path tracing pag 46
 
 %\section{Coding}
 %

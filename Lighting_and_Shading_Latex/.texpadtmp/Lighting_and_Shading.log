@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  23 MAY 2024 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  24 MAY 2024 19:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1523,6 +1523,18 @@ LaTeX Warning: Label `fig:figure' multiply defined.
 
 LaTeX Warning: Label `fig:figure@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
 )
 \openout1 = `Lighting_and_Shading.aux'.
 
@@ -1743,22 +1755,22 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {U}});
 (lettrine.sty)             reported on input line 72.
-<Figures/01.png, id=29, 205.76875pt x 177.66376pt>
+<Figures/01.png, id=31, 205.76875pt x 177.66376pt>
 File: Figures/01.png Graphic file (type png)
 <use Figures/01.png>
 Package pdftex.def Info: Figures/01.png  used on input line 77.
 (pdftex.def)             Requested size: 153.41435pt x 132.4613pt.
-<Figures/02.png, id=30, 245.91875pt x 212.795pt>
+<Figures/02.png, id=32, 245.91875pt x 212.795pt>
 File: Figures/02.png Graphic file (type png)
 <use Figures/02.png>
 Package pdftex.def Info: Figures/02.png  used on input line 85.
 (pdftex.def)             Requested size: 153.41435pt x 132.75626pt.
-<Figures/03.png, id=31, 205.76875pt x 177.66376pt>
+<Figures/03.png, id=33, 205.76875pt x 177.66376pt>
 File: Figures/03.png Graphic file (type png)
 <use Figures/03.png>
 Package pdftex.def Info: Figures/03.png  used on input line 93.
 (pdftex.def)             Requested size: 153.41435pt x 132.4613pt.
-<Figures/04.png, id=32, 271.0125pt x 290.08376pt>
+<Figures/04.png, id=34, 271.0125pt x 290.08376pt>
 File: Figures/04.png Graphic file (type png)
 <use Figures/04.png>
 Package pdftex.def Info: Figures/04.png  used on input line 100.
@@ -1775,12 +1787,12 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 18.42099pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L'}});
 (lettrine.sty)             reported on input line 107.
-<Figures/05.png, id=67, 1027.84pt x 722.7pt>
+<Figures/05.png, id=69, 1027.84pt x 722.7pt>
 File: Figures/05.png Graphic file (type png)
 <use Figures/05.png>
 Package pdftex.def Info: Figures/05.png  used on input line 112.
 (pdftex.def)             Requested size: 153.41435pt x 107.85997pt.
-<Figures/06.png, id=69, 1610.015pt x 514.92375pt>
+<Figures/06.png, id=71, 1610.015pt x 514.92375pt>
 File: Figures/06.png Graphic file (type png)
 <use Figures/06.png>
 Package pdftex.def Info: Figures/06.png  used on input line 135.
@@ -1789,7 +1801,7 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {I}});
 (lettrine.sty)             reported on input line 159.
-<Figures/07.png, id=70, 1505.625pt x 602.25pt>
+<Figures/07.png, id=72, 1505.625pt x 602.25pt>
 File: Figures/07.png Graphic file (type png)
 <use Figures/07.png>
 Package pdftex.def Info: Figures/07.png  used on input line 168.
@@ -1812,7 +1824,7 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {N}});
 (lettrine.sty)             reported on input line 179.
-<Figures/08.png, id=91, 556.32843pt x 299.61937pt>
+<Figures/08.png, id=93, 556.32843pt x 299.61937pt>
 File: Figures/08.png Graphic file (type png)
 <use Figures/08.png>
 Package pdftex.def Info: Figures/08.png  used on input line 182.
@@ -1828,12 +1840,12 @@ Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L}});
 (lettrine.sty)             reported on input line 198.
-<Figures/09.png, id=92, 702.625pt x 635.37375pt>
+<Figures/09.png, id=94, 702.625pt x 635.37375pt>
 File: Figures/09.png Graphic file (type png)
 <use Figures/09.png>
 Package pdftex.def Info: Figures/09.png  used on input line 201.
 (pdftex.def)             Requested size: 178.98082pt x 161.8485pt.
-<Figures/10.png, id=93, 1079.03125pt x 270.00874pt>
+<Figures/10.png, id=95, 1079.03125pt x 270.00874pt>
 File: Figures/10.png Graphic file (type png)
 <use Figures/10.png>
 Package pdftex.def Info: Figures/10.png  used on input line 215.
@@ -1842,12 +1854,26 @@ Package pdftex.def Info: Figures/10.png  used on input line 215.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc} <./Figures/08.png> <./Figures/09.png>]
-<Figures/11.png, id=103, 1009.7725pt x 654.445pt>
+<Figures/11.png, id=105, 1009.7725pt x 654.445pt>
 File: Figures/11.png Graphic file (type png)
 <use Figures/11.png>
 Package pdftex.def Info: Figures/11.png  used on input line 235.
 (pdftex.def)             Requested size: 178.98082pt x 115.99753pt.
- [4 <./Figures/10.png> <./Figures/11.png>] 
+<Figures/12.png, id=106, 1035.87pt x 580.1675pt>
+File: Figures/12.png Graphic file (type png)
+<use Figures/12.png>
+Package pdftex.def Info: Figures/12.png  used on input line 252.
+(pdftex.def)             Requested size: 178.98082pt x 100.23834pt.
+<Figures/13.png, id=107, 1927.2pt x 1053.9375pt>
+File: Figures/13.png Graphic file (type png)
+<use Figures/13.png>
+Package pdftex.def Info: Figures/13.png  used on input line 259.
+(pdftex.def)             Requested size: 178.98082pt x 97.87366pt.
+Package lettrine.sty Info: Targeted height = 15.846pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {I}});
+(lettrine.sty)             reported on input line 268.
+ [4 <./Figures/10.png> <./Figures/11.png> <./Figures/12.png> <./Figures/13.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
 
 Package pbalance Warning: Could not balance, doing nothing.
@@ -1866,18 +1892,18 @@ Package logreq Info: Writing requests to 'Lighting_and_Shading.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68112 strings out of 474116
- 1488000 string characters out of 5743682
- 2634723 words of memory out of 5000000
- 89332 multiletter control sequences out of 15000+600000
- 702272 words of font info for 232 fonts, out of 8000000 for 9000
+ 68132 strings out of 474116
+ 1488371 string characters out of 5743682
+ 2634938 words of memory out of 5000000
+ 89347 multiletter control sequences out of 15000+600000
+ 702429 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,13n,143p,1121b,1484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,13n,143p,1121b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (4 pages, 2134183 bytes).
+Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (4 pages, 5352819 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 67740 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 67758 words of extra memory for PDF output out of 74296 (max. 10000000)
 
