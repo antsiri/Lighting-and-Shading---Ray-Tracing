@@ -266,9 +266,17 @@ Il ray tracing dà colore per ogni possibile punto dell'immagine. Tuttavia un pi
 
 \section{Path Tracing}
 \taustart{I}l Path Tracing è un'estensione dell'algoritmo del ray tracing. Esso simula molti percorsi di luce per ogni pixel e ne valuta la media per calcolare il colore finale per ognuno di essi.\\
-Ogni volta che un raggio
+Ogni volta che un raggio colpisce una superficie, un nuovo raggio viene tracciato a partire dal punto di collisione in direzione casuale fino a quando raggiunge una massima profondità di percorso (maximum path depth) o finche un meccanismo "uccide" il raggio (simile ad una roulette russa). Di conseguenza, il Path Tracing produce effetti come mescolamento dei colori diffuso (diffuse color bleedind), riflessi lucisi (sfocati), ombre morbide, reali luci di area, vera profondità di campo.\\
+Path Tracing usa il campionamento casuale (metodo Monte Carlo) per incrementare il calcolo dell'immagine finale: il processo di campionamento casuale consente di rendere alcuni fenomeni complessi che non vengono gestiti nel ray tracing regolare, ma generalmente ci vuole più tempo per produrre un'immagine tracciata di alta qualità. \\
+Tale campionamento introduce del rumore nell'immagine renderizzata. Tale problema si risolve lasciando che l'algoritmo generi più campioni.
 
-%TODO: finire Path tracing pag 46
+\subsection{Differenze tra Path Tracing e Ray Tracing}
+Path Tracing si basa fisicamente sulla simulazione della luce che consente un rendering altamente realistico. \'E un algoritmo elegante che può simulare molti complessi modi di determinare il percorso e la dispersione della luce nelle scene virtuali. Il Path Tracing usa il tracciamento dei raggi per determinare la visibilità tra gli eventi di scattering. Ray Tracing è una operazione di base che può essere usata per molteplici cose. Quindi, il tracciamento dei raggi da solo non produce in maniera automatica immagini realistiche. Per questo si utilizzano algoritmi del trasporto della luce come il Path Tracing. Tuttavia, anche se elegante e molto potente, il Path Tracing è molto costoso e impiega parecchio tempo per produrre immagini stabili. A tal caso sono stati proposti dei filtri adattivi che riutilizzano più informazioni possibili su molti fotogrammi e pixel al fine di produrre immagini robuste e stabili.
+
+\subsection{Rumore nel Ray Tracing}
+
+\section{Applicazione}
+
 
 %\section{Coding}
 %

@@ -4,12 +4,15 @@
 \contentsline {section}{\numberline {2}Le sorgenti di luce}{1}{section.2}%
 \contentsline {section}{\numberline {3}Modelli di riflessione}{2}{section.3}%
 \contentsline {section}{\numberline {4}Modelli di shading}{2}{section.4}%
-\contentsline {section}{\numberline {5}Il modello del Ray Tracing}{2}{section.5}%
+\contentsline {section}{\numberline {5}Il modello del Ray Tracing}{3}{section.5}%
 \contentsline {section}{\numberline {6}L'equazione di rendering}{3}{section.6}%
 \contentsline {section}{\numberline {7}Scanline rendering}{3}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Z-buffering}{3}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Algoritmo del pittore}{3}{subsection.7.2}%
 \contentsline {section}{\numberline {8}Ray Tracing}{4}{section.8}%
 \contentsline {section}{\numberline {9}Path Tracing}{4}{section.9}%
-\contentsline {section}{Riferimenti}{4}{section.9}%
 \contentsfinish 
+\contentsline {subsection}{\numberline {9.1}Differenze tra Path Tracing e Ray Tracing}{5}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Rumore nel Ray Tracing}{5}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Applicazione}{5}{section.10}%
+\contentsline {section}{Riferimenti}{5}{section.10}%
