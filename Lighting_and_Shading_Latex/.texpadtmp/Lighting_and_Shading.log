@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  25 MAY 2024 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  25 MAY 2024 17:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1894,15 +1894,15 @@ Package logreq Info: Writing requests to 'Lighting_and_Shading.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68145 strings out of 474116
- 1488519 string characters out of 5743682
+ 68149 strings out of 474116
+ 1488589 string characters out of 5743682
  2636939 words of memory out of 5000000
  89352 multiletter control sequences out of 15000+600000
- 709854 words of font info for 236 fonts, out of 8000000 for 9000
+ 710166 words of font info for 238 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,13n,143p,1121b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,13n,143p,1121b,1484s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (5 pages, 5356180 bytes).
+Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (5 pages, 5357464 bytes).
 PDF statistics:
  248 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams
