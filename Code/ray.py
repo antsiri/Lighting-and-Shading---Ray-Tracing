@@ -5,7 +5,7 @@ import numpy as np
     ("origin", nb.float64[:]),
     ("direction", nb.float64[:]),
     ("tmin", nb.float64),
-    ("tmax", nb.float54),
+    ("tmax", nb.float64),
 ])
 
 class Ray():
