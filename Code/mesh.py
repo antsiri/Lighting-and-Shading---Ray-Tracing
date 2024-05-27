@@ -17,6 +17,6 @@ class Mesh():
     def get_node_parent(self, node_index):
         return int((node_index-1)/2)
     
-    def intersection(self, ray):
+    def intersect(self, ray):
         return _intersect(self.tree, self.triangles, ray)
     

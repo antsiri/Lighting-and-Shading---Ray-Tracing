@@ -129,4 +129,11 @@ if __name__ == '__main__':
     print(closest_object.normal(P))
     print(closest_normal)
 
-    #Inserire parte con caricamento dell'oggetto 
+    from load_object import load_obj
+    obj = load_obj("objects/teapot.obj")
+    triangles = np.array(obj.triangles, dtype=np.float64)
+    
+    r = Ray(np.array([0,0,-2], np.float64), np.array([0,0,1], np.float64))
+    ts, normals = obj.intersect(r)
+
+    print(normals)

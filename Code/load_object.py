@@ -15,17 +15,6 @@ def number_of_nodes_in_tree(kd_tree):
     
     return num_nodes
 
-def convert_node_to_array(tree, min_ax, max_ax, triangles, node, index):
-    tree[index] = node.center
-    min_ax[index] = node.min_ax
-    max_ax[index] = node.max_ax
-    triangles[index] = node.triangle
-
-    if node.left is not None:
-        convert_node_to_array(node.left, 2*index+1)
-    if node.right is not None:
-        convert_node_to_array(node.right, 2*index+2)
-
 def convert_tree_to_numba(kd_tree):
     n_nodes = number_of_nodes_in_tree(kd_tree)*2
     tree = np.zeros(shape=(n_nodes, 3))-1
@@ -33,7 +22,18 @@ def convert_tree_to_numba(kd_tree):
     max_ax = np.zeros(n_nodes)-1
     triangles = np.zeros(shape=(n_nodes, 3, 3))-1
 
-    convert_node_to_array(tree, min_ax, max_ax, triangles, kd_tree, 0)
+    def convert_node_to_array(node, index):
+        tree[index] = node.center
+        min_ax[index] = node.min_ax
+        max_ax[index] = node.max_ax
+        triangles[index] = node.triangle
+
+        if node.left is not None:
+            convert_node_to_array(node.left, 2*index+1)
+        if node.right is not None:
+            convert_node_to_array(node.right, 2*index+2)
+
+    convert_node_to_array(kd_tree, 0)
 
     return tree, min_ax, max_ax, triangles
 
@@ -69,6 +69,64 @@ def construct_kd_tree(triangles, axis=0):
                 left=left,
                 right=right)
 
-#def get_triangles
+def get_triangles(vertices, faces):
+    triangles = []
+    for face in faces:
+        triangles.append([vertices[face[0]-1], vertices[face[1]-1], vertices[face[2]-1]])
+    return triangles
+
+def load_obj(filename):
+    vertices = []
+    faces = []
+
+    with open(filename, "r") as f:
+        for line in f:
+            if line.startswith('#'):
+                continue
+            if line.startswith("f "):
+                line_data = line.split(" ")
+                faces.append([int(x) for x in line_data[1:]])
+            if line.startswith("v "):
+                line_data = line.split(" ")
+                vertices.append([float(x) for x in line_data[1:]])
+
+    triangles = get_triangles(vertices, faces)
+    triangles = np.array(triangles)
+
+    kd_tree = construct_kd_tree(triangles)
+
+    tree, min_ax, max_ax, triangles = convert_tree_to_numba(kd_tree)
+
+    return Mesh(tree, min_ax, max_ax, triangles)
+
+def intersect_tree(node, ray, depth=0):
+    if node is None:
+        return None
+    
+    axis = 0
+    next_branch = None
+    opposite_branch = None
+
+    if ray.origin[axis] < node.center[axis]:
+        next_branch = node.left
+        opposite_branch = node.right
+    else:
+        next_branch = node.right
+        opposite_branch = node.left
+
+    nearest = intersect_tree(next_branch, ray, depth+1)
+
+    if nearest is None or np.linalg.norm(nearest.center - ray.origin) > np.linalg.norm(node.center - ray.origin):
+        nearest = node
+
+    return nearest
 
 
+if __name__ == "__main__":
+    object = load_obj("objects/teapot.obj")
+
+    from ray import Ray
+    ray = Ray(np.array([0,0,0], dtype=np.float64), np.array([1,1,1], dtype=np.float64))
+
+    print(object.intersect(ray))
+    
