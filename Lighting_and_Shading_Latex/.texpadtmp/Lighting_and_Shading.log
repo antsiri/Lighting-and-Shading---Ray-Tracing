@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  25 MAY 2024 17:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  1 JUN 2024 08:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1454,12 +1454,34 @@ Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 ) (./tauenvs.sty
 Package: tauenvs 2024/04/10
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+\@float@every@algorithm=\toks58
+\c@algorithm=\count526
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count527
+\c@ALG@rem=\count528
+\c@ALG@nested=\count529
+\ALG@tlm=\skip190
+\ALG@thistlm=\skip191
+\c@ALG@Lnr=\count530
+\c@ALG@blocknr=\count531
+\c@ALG@storecount=\count532
+\c@ALG@tmpcounter=\count533
+\ALG@tmplength=\skip192
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
-LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 50.
+LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 54.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/t1stix2.fd
 File: t1stix2.fd 2018/04/02 v2.0.0-latex stix2 T1 font definitions
 ) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.aux
@@ -1535,71 +1557,89 @@ LaTeX Warning: Label `fig:figure' multiply defined.
 
 LaTeX Warning: Label `fig:figure@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure@cref' multiply defined.
+
 )
 \openout1 = `Lighting_and_Shading.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 50.
-LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 54.
+LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line 54.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls1stix2.fd
 File: ls1stix2.fd 2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 50.
-LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line 50.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 54.
+LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line 54.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls2stix2.fd
 File: ls2stix2.fd 2018/04/02 v2.0.0-latex stix2 LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count526
+\scratchcounter=\count534
 \scratchdimen=\dimen396
 \scratchbox=\box101
-\nofMPsegments=\count527
-\nofMParguments=\count528
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count529
+\nofMPsegments=\count535
+\nofMParguments=\count536
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count537
 \MPscratchDim=\dimen397
-\MPnumerator=\count530
-\makeMPintoPDFobject=\count531
-\everyMPtoPDFconversion=\toks59
+\MPnumerator=\count538
+\makeMPintoPDFobject=\count539
+\everyMPtoPDFconversion=\toks60
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 50.
-Package microtype Info: Applying patch `item' on input line 50.
-Package microtype Info: Applying patch `toc' on input line 50.
-Package microtype Info: Applying patch `eqnum' on input line 50.
-Package microtype Info: Applying patch `footnote' on input line 50.
-Package microtype Info: Applying patch `verbatim' on input line 50.
+LaTeX Info: Redefining \microtypecontext on input line 54.
+Package microtype Info: Applying patch `item' on input line 54.
+Package microtype Info: Applying patch `toc' on input line 54.
+Package microtype Info: Applying patch `eqnum' on input line 54.
+Package microtype Info: Applying patch `footnote' on input line 54.
+Package microtype Info: Applying patch `verbatim' on input line 54.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 50.
+LaTeX Info: Redefining \showhyphens on input line 54.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1612,7 +1652,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count532
+\c@lstlisting=\count540
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1648,9 +1688,9 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 50.
-LaTeX Info: Command `\ddddot' is already robust on input line 50.
-Package hyperref Info: Link coloring ON on input line 50.
+LaTeX Info: Command `\dddot' is already robust on input line 54.
+LaTeX Info: Command `\ddddot' is already robust on input line 54.
+Package hyperref Info: Link coloring ON on input line 54.
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
@@ -1669,80 +1709,80 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Lighting_and_Shading.bbl' found.
  (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl)
-Package biblatex Info: Reference section=0 on input line 50.
-Package biblatex Info: Reference segment=0 on input line 50.
-LaTeX Info: Redefining \it@ocap on input line 50.
-LaTeX Info: Redefining \it@ccap on input line 50.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 52.
+Package biblatex Info: Reference section=0 on input line 54.
+Package biblatex Info: Reference segment=0 on input line 54.
+LaTeX Info: Redefining \it@ocap on input line 54.
+LaTeX Info: Redefining \it@ccap on input line 54.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 56.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 17.09995pt on input line 52.
+(Font)              scaled to size 17.09995pt on input line 56.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 52.
+(Font)              scaled to size 8.54997pt on input line 56.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 52.
+(Font)              scaled to size 8.54997pt on input line 56.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 54.
+(Font)              scaled to size 7.59998pt on input line 58.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 54.
-LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input line 54.
+(Font)              scaled to size 7.59998pt on input line 58.
+LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls1stix2scr.fd
 File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input line 54.
+LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls2stix2ex.fd
 File: ls2stix2ex.fd 2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input line 54.
+LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls1stix2frak.fd
 File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input line 54.
+LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls1stix2bb.fd
 File: ls1stix2bb.fd 2018/04/02 v2.0.0-latex stix2 blackboard LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input line 54.
+LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls2stix2cal.fd
 File: ls2stix2cal.fd 2018/04/02 v2.0.0-latex stix2 calligraphic LS2 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input line 54.
+LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls1stix2sf.fd
 File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input line 54.
+LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls2stix2tt.fd
 File: ls2stix2tt.fd 2018/04/02 v2.0.0-latex stix2 typewriter LS2 font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 54.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 54.
+(Font)              scaled to size 8.54997pt on input line 58.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 54.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 54.
+(Font)              scaled to size 7.59998pt on input line 58.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 55.
+(Font)              scaled to size 9.49997pt on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 55.
+(Font)              scaled to size 9.49997pt on input line 59.
  (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.toc)
 \tf@toc=\write5
 \openout5 = `Lighting_and_Shading.toc'.
@@ -1750,35 +1790,35 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L}});
-(lettrine.sty)             reported on input line 61.
+(lettrine.sty)             reported on input line 65.
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {U}});
-(lettrine.sty)             reported on input line 72.
-<Figures/01.png, id=37, 205.76875pt x 177.66376pt>
+(lettrine.sty)             reported on input line 76.
+<Figures/01.png, id=43, 205.76875pt x 177.66376pt>
 File: Figures/01.png Graphic file (type png)
 <use Figures/01.png>
-Package pdftex.def Info: Figures/01.png  used on input line 77.
+Package pdftex.def Info: Figures/01.png  used on input line 81.
 (pdftex.def)             Requested size: 153.41435pt x 132.4613pt.
-<Figures/02.png, id=38, 245.91875pt x 212.795pt>
+<Figures/02.png, id=44, 245.91875pt x 212.795pt>
 File: Figures/02.png Graphic file (type png)
 <use Figures/02.png>
-Package pdftex.def Info: Figures/02.png  used on input line 85.
+Package pdftex.def Info: Figures/02.png  used on input line 89.
 (pdftex.def)             Requested size: 153.41435pt x 132.75626pt.
-<Figures/03.png, id=39, 205.76875pt x 177.66376pt>
+<Figures/03.png, id=45, 205.76875pt x 177.66376pt>
 File: Figures/03.png Graphic file (type png)
 <use Figures/03.png>
-Package pdftex.def Info: Figures/03.png  used on input line 93.
+Package pdftex.def Info: Figures/03.png  used on input line 97.
 (pdftex.def)             Requested size: 153.41435pt x 132.4613pt.
-<Figures/04.png, id=40, 271.0125pt x 290.08376pt>
+<Figures/04.png, id=46, 271.0125pt x 290.08376pt>
 File: Figures/04.png Graphic file (type png)
 <use Figures/04.png>
-Package pdftex.def Info: Figures/04.png  used on input line 100.
+Package pdftex.def Info: Figures/04.png  used on input line 104.
 (pdftex.def)             Requested size: 153.41435pt x 164.21631pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 103.
+(Font)              scaled to size 6.64998pt on input line 107.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.64998pt on input line 103.
+(Font)              scaled to size 6.64998pt on input line 107.
  [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}
 
 
@@ -1786,53 +1826,50 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 18.42099pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L'}});
-(lettrine.sty)             reported on input line 107.
-<Figures/05.png, id=78, 1027.84pt x 722.7pt>
+(lettrine.sty)             reported on input line 111.
+<Figures/05.png, id=87, 1027.84pt x 722.7pt>
 File: Figures/05.png Graphic file (type png)
 <use Figures/05.png>
-Package pdftex.def Info: Figures/05.png  used on input line 112.
+Package pdftex.def Info: Figures/05.png  used on input line 116.
 (pdftex.def)             Requested size: 153.41435pt x 107.85997pt.
-<Figures/06.png, id=80, 1610.015pt x 514.92375pt>
+<Figures/06.png, id=89, 1610.015pt x 514.92375pt>
 File: Figures/06.png Graphic file (type png)
 <use Figures/06.png>
-Package pdftex.def Info: Figures/06.png  used on input line 135.
+Package pdftex.def Info: Figures/06.png  used on input line 139.
 (pdftex.def)             Requested size: 153.41435pt x 49.05968pt.
-
-Underfull \vbox (badness 2409) has occurred while \output is active []
-
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {I}});
-(lettrine.sty)             reported on input line 159.
-<Figures/07.png, id=81, 1505.625pt x 602.25pt>
+(lettrine.sty)             reported on input line 163.
+<Figures/07.png, id=90, 1505.625pt x 602.25pt>
 File: Figures/07.png Graphic file (type png)
 <use Figures/07.png>
-Package pdftex.def Info: Figures/07.png  used on input line 168.
+Package pdftex.def Info: Figures/07.png  used on input line 172.
 (pdftex.def)             Requested size: 178.98082pt x 71.58684pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 175.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 177.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 175.
+(Font)              scaled to size 6.64998pt on input line 177.
  [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathscr.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc} <./Figures/04.png> <./Figures/05.png> <./Figures/06.png> <./Figures/07.png>]
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 18.42099pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L'}});
-(lettrine.sty)             reported on input line 176.
+(lettrine.sty)             reported on input line 178.
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {N}});
-(lettrine.sty)             reported on input line 179.
-<Figures/08.png, id=102, 556.32843pt x 299.61937pt>
+(lettrine.sty)             reported on input line 181.
+<Figures/08.png, id=112, 556.32843pt x 299.61937pt>
 File: Figures/08.png Graphic file (type png)
 <use Figures/08.png>
-Package pdftex.def Info: Figures/08.png  used on input line 182.
+Package pdftex.def Info: Figures/08.png  used on input line 184.
 (pdftex.def)             Requested size: 178.98082pt x 96.3922pt.
-LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line 189.
+LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line 191.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 )
@@ -1842,44 +1879,73 @@ Package microtype Info: Character `textflorin ' is missing
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {L}});
-(lettrine.sty)             reported on input line 198.
-<Figures/09.png, id=103, 702.625pt x 635.37375pt>
+(lettrine.sty)             reported on input line 200.
+<Figures/09.png, id=113, 702.625pt x 635.37375pt>
 File: Figures/09.png Graphic file (type png)
 <use Figures/09.png>
-Package pdftex.def Info: Figures/09.png  used on input line 201.
+Package pdftex.def Info: Figures/09.png  used on input line 203.
 (pdftex.def)             Requested size: 178.98082pt x 161.8485pt.
-<Figures/10.png, id=104, 1079.03125pt x 270.00874pt>
+<Figures/10.png, id=114, 1079.03125pt x 270.00874pt>
 File: Figures/10.png Graphic file (type png)
 <use Figures/10.png>
-Package pdftex.def Info: Figures/10.png  used on input line 215.
+Package pdftex.def Info: Figures/10.png  used on input line 217.
 (pdftex.def)             Requested size: 178.98082pt x 44.78435pt.
  [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc} <./Figures/08.png> <./Figures/09.png>]
-<Figures/11.png, id=114, 1009.7725pt x 654.445pt>
+<Figures/11.png, id=124, 1009.7725pt x 654.445pt>
 File: Figures/11.png Graphic file (type png)
 <use Figures/11.png>
-Package pdftex.def Info: Figures/11.png  used on input line 235.
+Package pdftex.def Info: Figures/11.png  used on input line 237.
 (pdftex.def)             Requested size: 178.98082pt x 115.99753pt.
-<Figures/12.png, id=115, 1035.87pt x 580.1675pt>
+<Figures/12.png, id=125, 1035.87pt x 580.1675pt>
 File: Figures/12.png Graphic file (type png)
 <use Figures/12.png>
-Package pdftex.def Info: Figures/12.png  used on input line 252.
+Package pdftex.def Info: Figures/12.png  used on input line 254.
 (pdftex.def)             Requested size: 178.98082pt x 100.23834pt.
-<Figures/13.png, id=116, 1927.2pt x 1053.9375pt>
+<Figures/13.png, id=126, 1927.2pt x 1053.9375pt>
 File: Figures/13.png Graphic file (type png)
 <use Figures/13.png>
-Package pdftex.def Info: Figures/13.png  used on input line 259.
+Package pdftex.def Info: Figures/13.png  used on input line 261.
 (pdftex.def)             Requested size: 178.98082pt x 97.87366pt.
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {I}});
-(lettrine.sty)             reported on input line 268.
- [4 <./Figures/10.png> <./Figures/11.png> <./Figures/12.png> <./Figures/13.png>] [5
+(lettrine.sty)             reported on input line 270.
+ [4 <./Figures/10.png> <./Figures/11.png> <./Figures/12.png> <./Figures/13.png>]
+Package lettrine.sty Info: Targeted height = 15.846pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 17.02998pt ({\color {taublue}\bfseries \fontsize {26pt}{28pt}\selectfont {D}});
+(lettrine.sty)             reported on input line 287.
+<Figures/14.png, id=142, 501.875pt x 301.125pt>
+File: Figures/14.png Graphic file (type png)
+<use Figures/14.png>
+Package pdftex.def Info: Figures/14.png  used on input line 310.
+(pdftex.def)             Requested size: 178.98082pt x 107.38947pt.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 317.
+<Figures/15.png, id=143, 501.875pt x 301.125pt>
+File: Figures/15.png Graphic file (type png)
+<use Figures/15.png>
+Package pdftex.def Info: Figures/15.png  used on input line 334.
+(pdftex.def)             Requested size: 178.98082pt x 107.38947pt.
+<Figures/16.png, id=144, 532.99126pt x 531.9875pt>
+File: Figures/16.png Graphic file (type png)
+<use Figures/16.png>
+Package pdftex.def Info: Figures/16.png  used on input line 346.
+(pdftex.def)             Requested size: 178.98082pt x 178.64105pt.
 
-] 
+Underfull \hbox (badness 10000) in paragraph at lines 342--349
+
+ []
+
+[5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathex.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc} <./Figures/14.png> <./Figures/15.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Empty bibliography on input line 496.
+
+[6 <./Figures/16.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
-
-Package pbalance Warning: Could not balance, doing nothing.
-
+Package pbalance Info: Done balancing page 6 on input line 500.
 (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1887,25 +1953,33 @@ L3 programming layer <2024-02-20>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Lighting_and_Shading
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'Lighting_and_Shading.run.xml'.
 \openout1 = `Lighting_and_Shading.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68149 strings out of 474116
- 1488589 string characters out of 5743682
- 2636939 words of memory out of 5000000
- 89352 multiletter control sequences out of 15000+600000
+ 68566 strings out of 474116
+ 1494609 string characters out of 5743682
+ 2645122 words of memory out of 5000000
+ 89750 multiletter control sequences out of 15000+600000
  710166 words of font info for 238 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,13n,143p,1121b,1484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,13n,143p,1121b,1317s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (5 pages, 5357464 bytes).
+Output written on "/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.pdf" (6 pages, 5405206 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 69830 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 69869 words of extra memory for PDF output out of 74296 (max. 10000000)
 

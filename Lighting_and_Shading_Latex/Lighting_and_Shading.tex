@@ -2,6 +2,10 @@
 \usepackage[english, italian]{babel}
 \usepackage{tauenvs}
 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
 %----------------------------------------------------------
 % TITLE
 %----------------------------------------------------------
@@ -168,9 +172,7 @@
     \includegraphics[width=0.7\columnwidth]{Figures/07.png}
     \caption{Flat, Gouraud e Phong shading}
     \label{fig:figure}
-\end{figure}
-
-%TODO parte di Ciro, cap 2-3		
+\end{figure}	
 
 \section{Il modello del Ray Tracing}
 \taustart{L'}ambizione degli artisti, dei designers, degli ingegneri è sempre stata la simulazione dell'immagine di una scena, una storia, un prodotto, un palazzo prima che sia effettivamente realizzati e costruiti - architetti devono costruire modelli in scala, produttori di film e video-game devono utilizzare storyboards per provare e trasmettere le sensazioni di un film o un video-game. E gli inserzionisti vogliono creare interpretazioni perfette dei loro prodotti nella migliore luce possibile. Inoltre i designer di prodotti e macchinari vogliono trovare le debolezze di un progetto prima che esso venga effettivamente costruito - direttori di film vogliono vedere il risultato finale prima dell'arduo lavoro di post-produzione, i produttori vogliono mostrare a potenziali clienti il prodotto finale per stimolarne la domanda. Il test di tali idee è chiamato virtual prototyping nella manifattura e pre-visualization nell'industria cinematografica. Vi è quindi la necessità di disporre di queste immagini, o video, a basso costo e in poco tempo.\\
@@ -282,6 +284,73 @@ Invece di tracciare da centinaia a migliaia di raggi per pixel, per minimizzare 
 \end{itemize}
 
 \section{Applicazione}
+\taustart{D}i seguito viene presentata una semplice implementazione del ray tracing in Python. 
+
+\subsection{Prerequisiti}
+Quello che necessità sono basiche nozioni di geometria vettoriale:
+\begin{itemize}
+	\item Dati due punti $A$ e $B$, qualunque sia la dimensione $(1, 2, 3, \dots, n)$, il vettore che va da $A$ a $B$ può essere calcolato con $B-A$.
+	\item La lunghezza del vettore (norma), che si valuta calcolando la radice quadrata della somma delle componenti vettoriali al quadrato. Si denota con $\Vert v \Vert$.
+	\item Versore, vettore di lunghezza 1: $\Vert v \Vert=1$. Il versore di un vettore può essere calcolato effettuando una normalizzazione: $u=\frac{v}{\Vert v \Vert}$.
+	\item Prodotto tra vettori.
+	\item Risoluzione di equazioni di secondo grado
+\end{itemize}
+
+\section{Algoritmo}
+Per dare una spiegazione dell'algoritmo vi è la necessità di impostare la scena:
+\begin{itemize}
+	\item Impostiamo oggetti nello spazio 3D
+	\item Impostiamo una sorgente di luce
+	\item Vi è la necessità di impostare un punto (o camera) per osservare la scena
+	\item Affinché la camera osservi, è necessario uno schermo, attraverso il quale osservare gli oggetti
+\end{itemize} 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/14.png}
+    \caption{}
+    \label{fig:figure}
+\end{figure}
+
+Dato la scena, l'algoritmo del ray tracing 
+\begin{algorithm}
+  \caption{Algoritmo del ray tracing}\label{r_t}
+  \begin{algorithmic}
+  	\ForAll{pixel $p(x,y,z)$ dello schermo}
+        \State $p \leftarrow$ il colore nero 
+        \If{il raggio che parte dalla camera e  p interseca un oggetto della scena}
+         	\State Calcola il punto d'intersezione con l'oggetto più vicino
+         	\If{non ci sono oggetti tra il punto d'intersezione e la luce} 
+         		\State calcola il colore del punto d'intersezione
+         		\State $ p \leftarrow$  colore del punto d'intersezione
+         	\EndIf	
+        \EndIf
+    \EndFor
+  \end{algorithmic}
+\end{algorithm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/15.png}
+    \caption{}
+    \label{fig:figure}
+\end{figure}
+
+Alla fine dell'algoritmo lo schermo si riempierà con il corretto colore e l'immagina può essere salvata.
+
+\subsection{Configurazione della scena}
+Prima di tutto è necessario configurare la scena. \\
+Supponiamo che camera e schermo siano posizionati come in figura.\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/16.png}
+    \caption{Scena}
+    \label{fig:figure}
+\end{figure}
+
+Da qui, la camera si trova in $\left(x=0, y=0, z=1\right)$ e lo schermo è parte del piano formato dall'asse $x$ e $y$.\\
+Può essere qui scritto uno scheletro del codice.
+
 
 
 %\section{Coding}

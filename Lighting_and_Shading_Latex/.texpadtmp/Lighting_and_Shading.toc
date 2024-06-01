@@ -11,8 +11,11 @@
 \contentsline {subsection}{\numberline {7.2}Algoritmo del pittore}{3}{subsection.7.2}%
 \contentsline {section}{\numberline {8}Ray Tracing}{4}{section.8}%
 \contentsline {section}{\numberline {9}Path Tracing}{4}{section.9}%
-\contentsfinish 
 \contentsline {subsection}{\numberline {9.1}Differenze tra Path Tracing e Ray Tracing}{5}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Rumore nel Ray Tracing}{5}{subsection.9.2}%
 \contentsline {section}{\numberline {10}Applicazione}{5}{section.10}%
-\contentsline {section}{Riferimenti}{5}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Prerequisiti}{5}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Algoritmo}{5}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Configurazione della scena}{5}{subsection.11.1}%
+\contentsline {section}{Riferimenti}{6}{figure.caption.16}%
+\contentsfinish 
