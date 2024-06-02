@@ -5,6 +5,8 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 
+\usepackage{listings}
+
 
 %----------------------------------------------------------
 % TITLE
@@ -339,155 +341,233 @@ Dato la scena, l'algoritmo del ray tracing
 Alla fine dell'algoritmo lo schermo si riempierà con il corretto colore e l'immagina può essere salvata.
 
 \subsection{Configurazione della scena}
-Prima di tutto è necessario configurare la scena. \\
-Supponiamo che camera e schermo siano posizionati come in figura.\\
+Prima di tutto è necessario configurare la scena.
+Supponiamo che camera e schermo siano posizionati come in figura.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\columnwidth]{Figures/16.png}
     \caption{Scena}
     \label{fig:figure}
 \end{figure}
-
 Da qui, la camera si trova in $\left(x=0, y=0, z=1\right)$ e lo schermo è parte del piano formato dall'asse $x$ e $y$.\\
 Può essere qui scritto uno scheletro del codice.
 
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
 
+width = 500
+height = 300
 
-%\section{Coding}
-%
-%    \textit{Tau class} includes the \textit{listings} package, which offers versatile and customizable features for typesetting code snippets in \LaTeX\ documents. Specifically for C, C++, \LaTeX\ and Matlab codes. 
-%
-%    For C and C++ codes, the \textit{listings} package recognizes the syntax of these programming languages and highlights keywords, comments, and string literals accordingly.
-%
-%    \lstinputlisting[caption=Example of C code., language=C]{example.c}
-%
-%    Similarly, for Matlab codes, the \textit{listings} package offers syntax highlighting and line numbering, to the MATLAB language syntax.
-%    
-%    \lstinputlisting[caption=Example of matlab code., language=Matlab]{example.m}
-%
-%\section{References}
-%
-%    The default formatting for references follows the IEEE style. This style is commonly used for technical documents, research papers, and scholarly articles in engineering fields \cite{einstein}.
-%
-%    At the end of the document, you will find an example of the default reference formatting \cite{dirac}.
-%        
-%\section{Appendix}
-%
-%    \subsection{Environments preview}
-%
-%        The following environments are defined in \textit{tauenvs} package.
-%		
-%		\subsubsection{Tau environment}
-%
-%                The following code defines the tauenv environment. A custom title can be added to this environment.
-%
-%			\begin{tauenv}[frametitle=Tauenv]
-%                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum justo quis massa aliquet, ut ultrices quam bibendum.
-%			\end{tauenv}
-%		
-%\begin{lstlisting}[language=TeX, caption=Tauenv environment code.]
-%\newmdenv[
-%	backgroundcolor=taublue!22, 					
-%	linecolor=taublue,									
-%	linewidth=0.7pt,
-%	frametitle=\vskip0pt\bfseries,
-%	frametitlerule=false,
-%	frametitlefont=\color{taublue}\bfseries\sffamily,
-%	frametitlealignment=\raggedright,
-%	innertopmargin=3pt,
-%	innerbottommargin=6pt,
-%	innerleftmargin=6pt,
-%	innerrightmargin=6pt,
-%	font=\selectfont,
-%	fontcolor=taublue,									
-%	frametitleaboveskip=8pt,
-%	skipabove=10pt
-%]{tauenv} \end{lstlisting}
-%		
-%		\subsubsection{Note}
-%
-%                This code defines the note environment.
-%
-%  			\begin{note}
-%                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum justo quis massa aliquet, ut ultrices quam bibendum.
-%			\end{note}
-%		
-%\begin{lstlisting}[language=TeX, caption=Note environment code.]
-%\newmdenv[
-%	backgroundcolor=taublue!22, 						
-%	linecolor=taublue,									
-%	linewidth=0.7pt,
-%	frametitle=\vskip0pt\bfseries\notelanguage,
-%	frametitlerule=false,
-%	frametitlefont=\color{taublue}\bfseries\sffamily,
-%	frametitlealignment=\raggedright,
-%	innertopmargin=3pt,
-%	innerbottommargin=6pt,
-%	innerleftmargin=6pt,
-%	innerrightmargin=6pt,
-%	font=\normalfont,
-%	fontcolor=taublue,									
-%	frametitleaboveskip=3pt,
-%	skipabove=10pt
-%]{note} \end{lstlisting}
-%
-%		\subsubsection{Info}
-%
-%                This code defines the info environment.
-%
-%    		\begin{info}
-%                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum justo quis massa aliquet, ut ultrices quam bibendum.
-%			\end{info}
-%		
-%\begin{lstlisting}[language=TeX, caption=Info environment code.]
-%\newmdenv[
-%	backgroundcolor=taublue!22, 						
-%	linecolor=taublue,									
-%	linewidth=0.7pt,
-%	frametitle=\vskip0pt\bfseries\infolanguage,
-%	frametitlerule=false,
-%	frametitlefont=\color{taublue}\bfseries\sffamily,
-%	frametitlealignment=\raggedright,
-%	innertopmargin=3pt,
-%	innerbottommargin=6pt,
-%	innerleftmargin=6pt,
-%	innerrightmargin=6pt,
-%	font=\normalfont,
-%	fontcolor=taublue,									
-%	frametitleaboveskip=3pt,
-%	skipabove=10pt
-%]{info} \end{lstlisting}
-%
-%    \subsection{Alternative title}
-%
-%         You can make the following modification to \textit{tau class} in the \textit{title preferences} section to change the position of the title. This will move the title to the left. 
-%
-%\begin{lstlisting}[language=TeX, caption=Alternative title.]
-%\renewcommand{\@maketitle}{%
-%        \vskip-18pt
-%    {\RaggedRight\bfseries\color{taublue}\fontsize{18}{22}\sffamily\selectfont\@title\par}
-%		\vskip8pt
-%    {\RaggedRight\normalsize\sffamily\@author\par}
-%        \vskip8pt
-%    {\RaggedRight\fontsize{7pt}{8pt}\selectfont\@professor\par}
-%        \vskip24pt
-%}% 
-%\end{lstlisting}
-%
-%    \subsection{Equation skip value}
-%
-%        Play with the value of \verb|\eqskip| until the preferred spacing is set for equations.
-%
-%\begin{lstlisting}[language=TeX, caption=Equation skip code.]
-%\newlength{\eqskip}\setlength{\eqskip}{6.5pt}
-%\expandafter\def\expandafter\normalsize\expandafter{%
-%    \normalsize%
-%    \setlength\abovedisplayskip{\eqskip}%
-%    \setlength\belowdisplayskip{\eqskip}%
-%    \setlength\abovedisplayshortskip{\eqskip-\baselineskip}%
-%    \setlength\belowdisplayshortskip{\eqskip}%
-%}
-%\end{lstlisting}
+camera = np.array([0, 0, 1])
+ratio = float(width) / height
+screen = (-1, 1/ratio, 1, -1/ratio)
+
+image = np.zeros((height, width, 3))
+for i, y in enumerate(np.linspace(screen[1], screen[3], height)):
+    for j, x in enumerate(np.linspace(screen[0], screen[2], width)):
+        # image[i, j] = ...
+    print("progress: %d/%d" % (i+1, height))
+
+plt.imsave('image.png', image)
+\end{lstlisting}
+
+\begin{itemize}
+	\item La camera è solo una posizione (3 coordinate)
+	\item Lo schermo è definito da quattro numeri: sinistra, sopra, destra, sotto. \'E compreso tra $-1$ e $1$ sull'asse delle $x$ (valore arbitrario), ed è compreso  da $\frac{-1}{ratio}$ e $\frac{1}{ratio}$ sull'asse delle $y$, dove il $ratio = \frac{image\_width}{image\_height}$. Si fa ciò poiché si vuole l' aspect ratio del nostro schermo corrisponda con quella dell'immagine che si vuole produrre.
+	\item Il loop divide lo schermo lungo altezze e larghezza in punti, appartenenti al piano $x-y$, per poi calcolare il colore di ogni singolo pixel.
+\end{itemize}
+
+Facendo eseguire tale scheletro l'immagine di output è completamente nera.
+
+\subsection{Intersezione dei raggi}
+Visto che il raggio inizia dalla fotocamera e va nella direzione del pixel mirato in quel momento, possiamo definire un versore che punta in una direzione simile. Pertanto, si definisce un raggio che partendo dalla camera e va verso il pixel con la seguente equazione:
+\begin{equation*}
+	ray(t) = camera + \frac{pixel - camera}{\Vert pixel - camera \Vert} t
+\end{equation*}
+Si ricordi, la fotocamera e il pixel sono punti nello spazio tridimensionale. Per $t=0$ si ha la posizione della camera, mentre all'aumentare di $t$ più ci si allontana dalla camera nella direzione del pixel.\\
+Possiamo generalizzare l'equazione precedente indicando con $O$ l'origine e $D$ la destinazione:
+\begin{equation*}
+	ray(t) = O + \frac{D - O}{\Vert D -O \Vert} t = O + d\cdot t
+\end{equation*} 
+con $d$ il vettore di direzione.\\
+
+Possiamo quindi aggiungere al codice precedente il codice relativo al calcolo del raggio.
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+
+def normalization(vector):
+    return vector / np.linalg.norm(vector)
+
+width = 500
+height = 300
+
+camera = np.array([0, 0, 1])
+ratio = float(width) / height
+screen = (-1, 1/ratio, 1, -1/ratio)     
+
+image = np.zeros((height, width, 3))
+for i, y in enumerate(np.linspace(screen[1], screen[3], height)):
+    for j, x in enumerate(np.linspace(screen[0], screen[2], width)):
+        pixel = np.array([x, y, 0])
+        origin = camera
+        direction = normalization(pixel - origin)
+
+        # image[i, j] = ...
+        
+    print("progress: %d/%d" % (i+1, height))
+    
+plt.imsave('image.png', image)
+\end{lstlisting}
+
+\begin{itemize}
+	\item \'E stata aggiunta una funzione chiamata \texttt{normalization(vector)} per normalizzare il vettore
+	\item \'E stato aggiunto il calcolo dell'origine e della direzione;il pixel ha $z=0$ poiché si trova sullo schermo che si trova su piano $x-y$.
+\end{itemize}
+
+\subsection{Definizione della sfera}
+La parte più complessa l'intersezione con gli oggetti di scena, poiché essa differisce in base alla tipologia di oggetto. Per semplicità, in tale esempio si prende in considerazione una sfera.\\
+Una sfera è un oggetto molto semplice da definire matematicamente: essa è definita come un insieme di punti che sono tutti alla stessa distanza $r$ (raggio) da un dato punto (centro). Quindi, da un centro $C$ di una sfera, e il suo raggio $r$, un arbitrario punto $X$ si trova sulla sfera se e solo se:
+\begin{equation*}
+	\Vert X - C \Vert^2 = r^2
+\end{equation*}
+Possiamo quindi già definire nel codice la nostra sfera come segue (la inseriamo dopo la dichiarazione dello schermo)
+
+\begin{lstlisting}[language=Python]
+objects = [
+    {'center': np.array([-0.2, 0, -1]), 'radius':0.7},
+    {'center': np.array([0.1, -0.3, 0]), 'radius':0.1},
+    {'center': np.array([-0.3, 0, 0]), 'radius':0.15}
+]
+\end{lstlisting}
+
+\subsection{L'intersezione con la sfera}
+Conoscendo l'equazione dei raggi e sapendo la condizione che va soddisfatta affinché un punto si trovi sulla superficie sferica, sostituendo la prima di queste nella seconda, si ha:
+\begin{equation*}
+	\begin{split}
+		&\Vert ray(t) - C\Vert^2 = r^2\\
+		\implies & \Vert O + d\cdot t - C \Vert^2 = r^2 \\
+		\implies & \langle d\cdot t + O - C, d\cdot t + O - C\rangle = r^2 \\
+		\implies & \langle d, d\rangle t^2 + 2t\langle d, O-C\rangle + \langle O-C, O-C\rangle = r^2 \\
+		\implies & \Vert d\Vert ^2 t^2 + 2t\langle d, O-C \rangle + \Vert O-C\Vert ^2 - r^2 = 0
+	\end{split}
+\end{equation*}
+
+Questa è un'equazione di secondo grado che può essere risolta per $t$. Il discriminante è:
+\begin{equation*}
+	\begin{split}
+		& a = \Vert d \Vert ^2 = 1\\
+		& b = 2 \langle d, O-C \rangle\\
+		& c = \Vert O-C \Vert ^2 - r^2 \\
+		& \Delta = b^2 - 4ac
+	\end{split}
+\end{equation*}
+
+Una volta calcolato il discriminante, ci sono tre possibilità:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/17.png}
+    \caption{}
+    \label{fig:figure}
+\end{figure}
+Viene utilizzato il terzo caso ($\Delta > 0$), ovvero l'unico caso in cui si verificano intersezioni. La funzione, che ritorna il valore \texttt{t}, distanza tra l'origine del raggio e il punto d'intersezione, se si verifica $\Delta<0$, o valore \texttt{None} in caso contrario, è così definita:
+\begin{lstlisting}[language=Python]
+def sphere_intersect(center, radius, ray_origin, ray_direction):
+    b = 2* np.dot(ray_direction, ray_origin - center)
+    c = np.linalg.norm(ray_origin - center) ** 2 - radius ** 2
+    delta = b**2 - 4*c
+    if delta > 0:
+        t1 = (-b + np.sqrt(delta)) / 2
+        t2 = (-b - np.sqrt(delta)) / 2
+        if t1 > 0 and t2 > 0:
+            return min(t1, t2)
+    return None
+\end{lstlisting}
+Va notato che si ritorna solo la soluzione più piccola tra le due, che indica l'intersezione più vicina, se ovviamente entrambe le soluzioni sono positive.
+
+\subsection{Intersezione con l'oggetto più vicino}
+Può essere creata facilmente, utilizzando la funzione precedente, un funzione che cerca l'oggetto più vicino che viene intercettato dal raggio, se esiste. Semplicemente, si valutano tutte le sfere in cerca di intersezioni, memorizzando la più vicina.
+\begin{lstlisting}
+def nearest_intersected_object(objects, ray_origin, ray_direction):
+    distances = [sphere_intersect(obj['center'], obj['radius'], ray_origin, ray_direction) for obj in objects]
+    nearest_object = None
+    min_distance = np.inf
+    for index, distance in enumerate(distances):
+        if distance and distance < min_distance:
+            min_distance = distance
+            nearest_object = objects[index]
+    return nearest_object, min_distance
+\end{lstlisting}
+Alla chiamata di tale funzione, se l'oggetto più vicino non esiste, non c'è nessun oggetto che viene intersecato dal raggio, mentre in caso contrario viene ritornato l'oggetto più vicino con la rispettiva distanza.
+
+\subsection{Punti d'intersezione}
+Utilizzando le funzioni mostrate finora, si possono calcolare i punti d'intersezione.
+\begin{lstlisting}
+import numpy as np
+import matplotlib.pyplot as plt
+
+def normalization(vector):
+    return vector / np.linalg.norm(vector)
+
+def sphere_intersect(center, radius, ray_origin, ray_direction):
+    b = 2* np.dot(ray_direction, ray_origin - center)
+    c = np.linalg.norm(ray_origin - center) ** 2 - radius ** 2
+    delta = b**2 - 4*c
+    if delta > 0:
+        t1 = (-b + np.sqrt(delta)) / 2
+        t2 = (-b - np.sqrt(delta)) / 2
+        if t1 > 0 and t2 > 0:
+            return min(t1, t2)
+    return None
+
+def nearest_intersected_object(objects, ray_origin, ray_direction):
+    distances = [sphere_intersect(obj['center'], obj['radius'], ray_origin, ray_direction) for obj in objects]
+    nearest_object = None
+    min_distance = np.inf
+    for index, distance in enumerate(distances):
+        if distance and distance < min_distance:
+            min_distance = distance
+            nearest_object = objects[index]
+    return nearest_object, min_distance
+
+width = 500
+height = 300
+
+camera = np.array([0, 0, 1])
+ratio = float(width) / height
+# sinistra, sopra, destra, sotto
+screen = (-1, 1/ratio, 1, -1/ratio)  
+
+objects = [
+    {'center': np.array([-0.2, 0, -1]), 'radius':0.7},
+    {'center': np.array([0.1, -0.3, 0]), 'radius':0.1},
+    {'center': np.array([-0.3, 0, 0]), 'radius':0.15}
+]
+
+image = np.zeros((height, width, 3))
+for i, y in enumerate(np.linspace(screen[1], screen[3], height)):
+    for j, x in enumerate(np.linspace(screen[0], screen[2], width)):
+        pixel = np.array([x, y, 0])
+        origin = camera
+        direction = normalization(pixel - origin)
+
+        # check for intersections
+        nearest_object, min_distance = nearest_intersected_object(objects, origin, direction)
+        if nearest_object is None:
+            continue
+
+        # compute intersection point between ray and nearest object
+        intersection = origin + min_distance*direction
+        
+    # image[i, j] = ...  
+    print("progress: %d/%d" % (i+1, height))
+
+plt.imsave('image.png', image)
+\end{lstlisting}
+
+\subsection{Intersezione della luce}
 					
 %----------------------------------------------------------
 
