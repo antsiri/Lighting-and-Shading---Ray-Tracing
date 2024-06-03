@@ -22,6 +22,7 @@
 \contentsline {subsection}{\numberline {11.4}L'intersezione con la sfera}{7}{subsection.11.4}%
 \contentsline {subsection}{\numberline {11.5}Intersezione con l'oggetto più vicino}{7}{subsection.11.5}%
 \contentsline {subsection}{\numberline {11.6}Punti d'intersezione}{7}{subsection.11.6}%
-\contentsfinish 
 \contentsline {subsection}{\numberline {11.7}Intersezione della luce}{8}{subsection.11.7}%
-\contentsline {section}{Riferimenti}{8}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}Modello di riflessione: Blinn-Phong}{8}{subsection.11.8}%
+\contentsfinish 
+\contentsline {section}{Riferimenti}{9}{lstnumber.-12.18}%

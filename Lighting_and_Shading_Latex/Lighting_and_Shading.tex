@@ -18,7 +18,7 @@
 % AUTHORS, AFFILIATIONS AND PROFESSOR
 %----------------------------------------------------------
 
-\author{Antonio Sirignano - Ciro Scognamiglio}
+\author{Antonio Sirignano}
 
 %----------------------------------------------------------
 
@@ -35,7 +35,7 @@
 \institution{Università degli Studi di Napoli Federico II}
 \ftitle{Lighting and Shading: il modello del Ray Tracing}
 \date{a.a. 2023-2024}
-\etal{Sirignano - Scognamiglio}
+\etal{Sirignano}
 \course{Calcolo Scientifico per l'Innovazione Tecnologica}
 
 %----------------------------------------------------------
@@ -504,7 +504,7 @@ Alla chiamata di tale funzione, se l'oggetto più vicino non esiste, non c'è ne
 
 \subsection{Punti d'intersezione}
 Utilizzando le funzioni mostrate finora, si possono calcolare i punti d'intersezione.
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -568,6 +568,114 @@ plt.imsave('image.png', image)
 \end{lstlisting}
 
 \subsection{Intersezione della luce}
+Finora si è visto che se c'è una linea che parte dalla camera verso un oggetto, si sa qual è e che parte di esso si sta osservando. Non si sa se quell'oggetto sia illuminato o meno. Potrebbe capitare che la luce non colpisca quello specifico punto e quindi non può essere visto. Va quindi controllato se non c'è alcun oggetto della scena tra il punto d'intersezione e la luce.\\
+Si vuole sapere se il raggio che parte dal punto d'intersezione e va verso la luce interseca un oggetto della scena prima di attraversare la luce (utilizziamo la funzione\texttt{nearest\_intersected\_object()}). 
+
+Si dichiari la luce come segue:
+\begin{lstlisting}[language=Python]
+light = {'position': np.array([5, 5, 5])}
+\end{lstlisting}
+Per verificare se un oggetto sta ombreggiando il punto d'intersezione, va fatto passare il raggio che inizia dal punto d'intersezione e va verso la luce, e vedere se l'oggetto più vicino restituito è effettivamente più vicino della luce al punto d'intersezione, in altre parole nel mezzo.
+\begin{lstlisting}
+# ...
+intersection = origin + min_distance*direction
+
+ intersection_to_light = normalization(light['position'] - intersection)
+
+_, min_distance = nearest_intersected_object(objects, intersection, intersection_to_light)
+intersection_to_light_distance = np.linalg.norm(light['position'] - intersection)
+is_shadowed = min_distance < intersection_to_light_distance
+\end{lstlisting}
+
+Questo non funzionerà perché c'è bisogno di una piccola modifica: se si usasse il punto di intersezione come origine, potrebbe essere rilevata la sfera come oggetto tra il punto d'intersezione e la luce. Una soluzione è quella di allontanarsi leggermente dalla sfera nella direzione del vettore normale della superficie.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/18.png}
+    \caption{}
+    \label{fig:figure}
+\end{figure}
+Questa procedura può essere utilizzata per ogni tipo di oggetto.\\
+Il codice corretto sarà quindi:
+\begin{lstlisting}[language=Python]
+# ...
+intersection = origin + min_distance*direction
+
+normal_to_surface = normalization(intersection - nearest_object['center'])
+shifted_point = intersection + 1e-6*normal_to_surface
+intersection_to_light = normalization(light['position'] - shifted_point)
+
+_, min_distance = nearest_intersected_object(objects, shifted_point, intersection_to_light)
+intersection_to_light_distance = np.linalg.norm(light['position'] - intersection)
+is_shadowed = min_distance < intersection_to_light_distance
+        
+if is_showed:
+	continue
+\end{lstlisting}
+
+\subsection{Modello di riflessione: Blinn-Phong}
+Finora si è visto che un fascio di luce colpisce un oggetto e il riflesso viene intravisto va verso la camera. Ma cosa vede la camera? Per rispondere a tale domanda interviene il modello di Blinn-Phong.\\
+Il modello di Blinn-Phong è un'approssimazione del modello Phong che è computazionalmente più leggero.\\
+In accordo con tale modello, ogni materiale ha 4 proprietà:
+\begin{itemize}
+	\item \textbf{Colore ambientale}: colore dell'oggetto in assenza di luce;
+	\item \textbf{Colore diffuso}: colore percepito come risultato della riflessione diffusa della luce;
+	\item \textbf{Colore speculare}: colore di una parte lucida di un oggetto quando è colpito dalla luce;
+	\item \textbf{Lucentezza}: coefficiente che indica quanto lucida è una superficie.
+\end{itemize}
+Quindi ogni oggetto deve avere queste proprietà, che aggiungiamo al codice
+
+\begin{lstlisting}[language=Python]
+objects = [
+    {'center': np.array([-0.2, 0, -1]), 'radius':0.7, 'ambient': np.array([0.1, 0, 0]), 'diffuse': np.array([0.7, 0, 0]), 'specular': np.array([1, 1, 1]), 'shininess':100},
+    {'center': np.array([0.1, -0.3, 0]), 'radius':0.1, 'ambient': np.array([0.1, 0, 0.1]), 'diffuse': np.array([0.7, 0, 0.7]), 'specular': np.array([1, 1, 1]), 'shininess':100},
+    {'center': np.array([-0.3, 0, 0]), 'radius':0.15, 'ambient': np.array([0, 0.1, 0]), 'diffuse': np.array([0, 0.6, 0]), 'specular': np.array([1, 1, 1]), 'shininess':100}
+]
+\end{lstlisting}
+
+Tale modello impone queste proprietà anche alla luce, eccetto per la lucentezza.
+\begin{lstlisting}[language=Python]
+light = {'position': np.array([5, 5, 5]), 'ambient': np.array([1, 1, 1]), 'diffuse': np.array([1, 1, 1]), 'specular':np.array[1, 1, 1]}
+\end{lstlisting}
+Date queste proprietà, il modello Blinn-Phong calcola l'illuminazione di un singolo pixel come segue:
+\begin{equation*}
+	I_p = k_a \cdot i_a + k_d \cdot i_d \cdot L \cdot N + k_s \cdot i_s \cdot \left( N \cdot \frac{L+V}{\Vert L + V \Vert} \right)^{\frac{\alpha}{4}}
+\end{equation*}
+dove
+\begin{enumerate}
+	\item $k_a$, $k_d$, $k_s$ sono le proprietà ambientali, di diffusione, speculari di un oggetto;
+	\item $i_a$, $i_d$, $i_s$ sono le proprietà ambientali, di diffusione, speculari della luce;
+	\item $L$ è la direzione del versore che parte dal punto d'intersezione verso la luce;
+	\item $N$ è il versore della normale della superficie nel punto d'intersezione;
+	\item $V$ il versore che va dal punto d'intersezione verso la camera
+	\item $\alpha$ è la lucentezza dell'oggetto
+\end{enumerate}
+
+\begin{lstlisting}[language=Python]
+if is_shadowed:
+            break
+
+# RGB
+illumination = np.zeros((3))
+
+# ambient
+illumination += nearest_object['ambient'] * light['ambient']
+
+# diffuse
+illumination += nearest_object['diffuse'] * light['diffuse'] * np.dot(intersection_to_light, normal_to_surface)
+
+# specular
+intersection_to_camera = normalization(camera - intersection)
+H = normalization(intersection_to_light + intersection_to_camera)
+illumination += nearest_object['specular'] * light['specular'] * np.dot(normal_to_surface, H) ** (nearest_object['shininess']/4)
+
+image[i, j] = np.clip(illumination, 0, 1) 
+\end{lstlisting}
+Nel l'ultima linea di codice è stato limitato il colore tra 0 e 1 per non avere problemi.
+
+
+
+
+
 					
 %----------------------------------------------------------
 
