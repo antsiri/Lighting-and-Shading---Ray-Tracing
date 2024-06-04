@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.blg'
-[109] biber-darwin:340> INFO - === Mon Jun  3, 2024, 21:21:35
-[346] Biber.pm:419> INFO - Reading '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bcf'
-[458] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[477] Biber.pm:4419> INFO - Processing section 0
-[495] Biber.pm:4610> INFO - Looking for bibtex file '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/tau.bib' for section 0
-[497] bibtex.pm:1713> INFO - LaTeX decoding ...
-[503] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/tau.bib'
-[563] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[563] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[563] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'it-IT'
-[563] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
-[576] bbl.pm:660> INFO - Writing '/Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl' with encoding 'UTF-8'
-[578] bbl.pm:763> INFO - Output to /Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl
-[578] Biber.pm:131> WARN - legacy month field 'July' in entry '3' is not an integer - this will probably not sort properly.
-[578] Biber.pm:131> WARN - legacy month field 'May' in entry '1' is not an integer - this will probably not sort properly.
-[578] Biber.pm:133> INFO - WARNINGS: 2
+[99] biber-darwin:340> INFO - === Tue Jun  4, 2024, 10:49:54
+[327] Biber.pm:419> INFO - Reading '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bcf'
+[436] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[455] Biber.pm:4419> INFO - Processing section 0
+[470] Biber.pm:4610> INFO - Looking for bibtex file '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/tau.bib' for section 0
+[471] bibtex.pm:1713> INFO - LaTeX decoding ...
+[477] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/tau.bib'
+[530] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[530] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[530] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'it-IT'
+[530] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
+[539] bbl.pm:660> INFO - Writing '/Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl' with encoding 'UTF-8'
+[541] bbl.pm:763> INFO - Output to /Users/antoniosirignano/Documents/UniversitaÌ/Ingegneria_Informatica_LM32/Esami a gettone/CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNOLOGICA /Project/Lighting_and_Shading_Latex/.texpadtmp/Lighting_and_Shading.bbl
+[541] Biber.pm:131> WARN - legacy month field 'July' in entry '3' is not an integer - this will probably not sort properly.
+[541] Biber.pm:131> WARN - legacy month field 'May' in entry '1' is not an integer - this will probably not sort properly.
+[541] Biber.pm:133> INFO - WARNINGS: 2

@@ -24,5 +24,9 @@
 \contentsline {subsection}{\numberline {11.6}Punti d'intersezione}{7}{subsection.11.6}%
 \contentsline {subsection}{\numberline {11.7}Intersezione della luce}{8}{subsection.11.7}%
 \contentsline {subsection}{\numberline {11.8}Modello di riflessione: Blinn-Phong}{8}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Primo risultato}{9}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}Finto piano}{9}{subsection.11.10}%
+\contentsline {subsection}{\numberline {11.11}Riflessione}{9}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}Generazione di un video}{10}{subsection.11.12}%
+\contentsline {section}{Riferimenti}{10}{subsection.11.12}%
 \contentsfinish 
-\contentsline {section}{Riferimenti}{9}{lstnumber.-12.18}%

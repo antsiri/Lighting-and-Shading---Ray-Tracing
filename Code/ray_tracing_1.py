@@ -1,9 +1,13 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 def normalization(vector):
     return vector / np.linalg.norm(vector)
+
+def reflected(vector, axis):
+    return vector - 2 * np.dot(vector, axis) * axis
 
 def sphere_intersect(center, radius, ray_origin, ray_direction):
     b = 2 * np.dot(ray_direction, ray_origin - center)
@@ -26,8 +30,8 @@ def nearest_intersected_object(objects, ray_origin, ray_direction):
             nearest_object = objects[index]
     return nearest_object, min_distance
 
-width = 300
-height = 200
+width = 3840
+height = 2160
 
 max_depth = 3
 
@@ -40,52 +44,67 @@ light = { 'position': np.array([5, 5, 5]), 'ambient': np.array([1, 1, 1]), 'diff
 objects = [
     { 'center': np.array([-0.2, 0, -1]), 'radius': 0.7, 'ambient': np.array([0.1, 0, 0]), 'diffuse': np.array([0.7, 0, 0]), 'specular': np.array([1, 1, 1]), 'shininess': 100, 'reflection': 0.5 },
     { 'center': np.array([0.1, -0.3, 0]), 'radius': 0.1, 'ambient': np.array([0.1, 0, 0.1]), 'diffuse': np.array([0.7, 0, 0.7]), 'specular': np.array([1, 1, 1]), 'shininess': 100, 'reflection': 0.5 },
-    { 'center': np.array([-0.3, 0, 0]), 'radius': 0.15, 'ambient': np.array([0, 0.1, 0]), 'diffuse': np.array([0, 0.6, 0]), 'specular': np.array([1, 1, 1]), 'shininess': 100, 'reflection': 0.5 }
+    { 'center': np.array([-0.3, 0, 0]), 'radius': 0.15, 'ambient': np.array([0, 0.1, 0]), 'diffuse': np.array([0, 0.6, 0]), 'specular': np.array([1, 1, 1]), 'shininess': 100, 'reflection': 0.5 },
+    { 'center': np.array([0, -9000, 0]), 'radius': 9000 - 0.7, 'ambient': np.array([0.1, 0.1, 0.1]), 'diffuse': np.array([0.6, 0.6, 0.6]), 'specular': np.array([1, 1, 1]), 'shininess': 100, 'reflection': 0.5}
 ]
 
 image = np.zeros((height, width, 3))
-for i, y in enumerate(np.linspace(screen[1], screen[3], height)):
+for i, y in tqdm(enumerate(np.linspace(screen[1], screen[3], height)), position=0):
     for j, x in enumerate(np.linspace(screen[0], screen[2], width)):
         pixel = np.array([x, y, 0])
         origin = camera
         direction = normalization(pixel - origin)
 
-        # check for intersections
-        nearest_object, min_distance = nearest_intersected_object(objects, origin, direction)
-        if nearest_object is None:
-            continue
+        color = np.zeros((3))
+        reflection = 1
 
-        # compute intersection point between ray and nearest object
-        intersection = origin + min_distance * direction
+        for k in range(max_depth):
 
-        normal_to_surface = normalization(intersection - nearest_object['center'])
-        shifted_point = intersection + 1e-5 * normal_to_surface
-        intersection_to_light = normalization(light['position'] - shifted_point)
+            # check for intersections
+            nearest_object, min_distance = nearest_intersected_object(objects, origin, direction)
+            if nearest_object is None:
+                break
 
-        _, min_distance = nearest_intersected_object(objects, shifted_point, intersection_to_light)
-        intersection_to_light_distance = np.linalg.norm(light['position'] - intersection)
-        is_shadowed = min_distance < intersection_to_light_distance
-        
-        if is_shadowed:
-            continue
+            # compute intersection point between ray and nearest object
+            intersection = origin + min_distance * direction
 
-        # RGB
-        illumination = np.zeros((3))
+            normal_to_surface = normalization(intersection - nearest_object['center'])
+            shifted_point = intersection + 1e-5 * normal_to_surface
+            intersection_to_light = normalization(light['position'] - shifted_point)
 
-        # ambiant
-        illumination += nearest_object['ambient'] * light['ambient']
+            _, min_distance = nearest_intersected_object(objects, shifted_point, intersection_to_light)
+            intersection_to_light_distance = np.linalg.norm(light['position'] - intersection)
+            is_shadowed = min_distance < intersection_to_light_distance
+            
+            if is_shadowed:
+                break
 
-        # diffuse
-        illumination += nearest_object['diffuse'] * light['diffuse'] * np.dot(intersection_to_light, normal_to_surface)
+            # RGB
+            illumination = np.zeros((3))
 
-        # specular
-        intersection_to_camera = normalization(camera - intersection)
-        H = normalization(intersection_to_light + intersection_to_camera)
-        illumination += nearest_object['specular'] * light['specular'] * np.dot(normal_to_surface, H) ** (nearest_object['shininess'] / 4)
+            # ambiant
+            illumination += nearest_object['ambient'] * light['ambient']
 
-        image[i, j] = np.clip(illumination, 0, 1)
-  
-    #print("progress: %d/%d" % (i+1, height))
+            # diffuse
+            illumination += nearest_object['diffuse'] * light['diffuse'] * np.dot(intersection_to_light, normal_to_surface)
+
+            # specular
+            intersection_to_camera = normalization(camera - intersection)
+            H = normalization(intersection_to_light + intersection_to_camera)
+            illumination += nearest_object['specular'] * light['specular'] * np.dot(normal_to_surface, H) ** (nearest_object['shininess'] / 4)
+
+            #reflection
+            color += reflection * illumination
+            reflection *= nearest_object['reflection']
+
+            #new ray origin and direction
+            origin = shifted_point
+            direction = reflected(direction, normal_to_surface)
+
+
+        image[i, j] = np.clip(color, 0, 1)
+
+    print("\tprogress: %d/%d" % (i+1, height))
 
 plt.imsave('image.png', image)
 

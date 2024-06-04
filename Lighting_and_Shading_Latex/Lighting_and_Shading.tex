@@ -670,11 +670,143 @@ illumination += nearest_object['specular'] * light['specular'] * np.dot(normal_t
 
 image[i, j] = np.clip(illumination, 0, 1) 
 \end{lstlisting}
-Nel l'ultima linea di codice è stato limitato il colore tra 0 e 1 per non avere problemi.
+Nel l'ultima linea di codice è stato limitato il colore tra 0 e 1 per non avere problemi.\\
+\subsection{Primo risultato}
+Eseguendo il codice, incrementando altezza e larghezza dello schermo (comporta un aumento del tempo di calcolo), quello che si ottiene è la seguente immagine
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/19.png}
+    \caption{}
+    \label{fig:figure}
+\end{figure}
+Vedendo il risultato, è possibile aggiungere il riflesso alle sfere e un piano.
 
+\subsection{Finto piano}
+Un finto piano può essere renderizzato utilizzando una quarta sfera, impostando un raggio quasi infinito. Questo permette di percepire la sua superficie come un piano d'appoggio.	\\
+Quindi la soluzione è aggiungere alle sfere
+\begin{lstlisting}[language=Python]
+{ 'center': np.array([0, -9000, 0]), 'radius': 90000-0.7, 'ambient': np.array([0.1, 0.1, 0.1]), 'diffuse': np.array([0.6, 0.6, 0.6]), 'specular': np.array([1, 1, 1]), 'shininess': 100, 'reflection': 0.5 }
+\end{lstlisting}
 
+\subsection{Riflessione}
+Il raggio che è renderizzato finora, parte dalla sorgente luminosa, colpisce la superficie di un oggetto e rimbalza verso la camera. Potrebbe capitare che prima di arrivare alla camera colpisca altri oggetti prima: questo è il fenomeno della riflessione. Il raggio accumula differenti colori e quando colpirà la camera si vedrà il riflesso.\\
+Ogni oggetto deve avere un coefficiente di riflessione compreso tra 0 e 1. dove con 0 si indica che non riflette luce, mentre 1 è una superficie specchio. Si aggiunga tale coefficiente alle sfere:
+\begin{lstlisting}[language=Python]
+objects = [
+    { 'center': ... , 'reflection': 0.5 },
+    { 'center': ... , 'reflection': 0.5 },
+    { 'center': ... , 'reflection': 0.5 },
+    { 'center': ... , 'reflection': 0.5 }
+]
+\end{lstlisting}
+Per includere la riflessione, vi è la necessità di tracciare il raggio riflesso dopo che vi è un'intersezione e di includere il contributo del colore per ogni punto di intersezione. Tale operazione va ripetuta un certo numero di volte che va definito.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/20.png}
+    \caption{}
+    \label{fig:figure}
+\end{figure}
+Per il colore di ogni pixel, bisogna sommare il contributo per ogni punto d'intersezione del raggio:
+\begin{equation*}
+	c_p= i_0 + r_0i_1 + r_or_1i_2+r_0r_1r_2i_3 + \dots
+\end{equation*}
+dove 
+\begin{itemize}
+	\item $c$ è il colore finale del pixel;
+	\item $i$ l'illuminazione calcolata; attraverso il modello Blinn-Phong nell'$i$-esimo punto d'intersezione
+	\item $r$ è la riflessione dell'$i$-esimo oggetto intersecato.
+\end{itemize}
+Si sceglie arbitrariamente quando fermare la somma.\\
+La direzione del raggio può essere calcolata come segue:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/21.png}
+    \caption{}
+    \label{fig:figure}
+\end{figure}
+\begin{equation*}
+	R = V - 2(V \cdot N)N
+\end{equation*}
+dove,
+\begin{itemize}
+	\item $R$ è il versore del raggio riflesso
+	\item $V$ è il versore del raggio che colpisce la superficie
+	\item $N$ è il versore della normale della superficie nel punto in cui viene colpita dal raggio
+\end{itemize}
 
+Si aggiunge tale funzione
+\begin{lstlisting}[language=Python]
+def reflected(vector, axis):
+    return vector - 2 * np.dot(vector, axis) * axis
+\end{lstlisting}
+Il main modificato è quindi:
+\begin{lstlisting}
+for i, y in tqdm(enumerate(np.linspace(screen[1], screen[3], height)), position=0):
+    for j, x in enumerate(np.linspace(screen[0], screen[2], width)):
+        pixel = np.array([x, y, 0])
+        origin = camera
+        direction = normalization(pixel - origin)
 
+        color = np.zeros((3))
+        reflection = 1
+
+        for k in range(max_depth):
+
+            # check for intersections
+            nearest_object, min_distance = nearest_intersected_object(objects, origin, direction)
+            if nearest_object is None:
+                break
+
+            # compute intersection point between ray and nearest object
+            intersection = origin + min_distance * direction
+
+            normal_to_surface = normalization(intersection - nearest_object['center'])
+            shifted_point = intersection + 1e-5 * normal_to_surface
+            intersection_to_light = normalization(light['position'] - shifted_point)
+
+            _, min_distance = nearest_intersected_object(objects, shifted_point, intersection_to_light)
+            intersection_to_light_distance = np.linalg.norm(light['position'] - intersection)
+            is_shadowed = min_distance < intersection_to_light_distance
+            
+            if is_shadowed:
+                break
+
+            # RGB
+            illumination = np.zeros((3))
+
+            # ambiant
+            illumination += nearest_object['ambient'] * light['ambient']
+
+            # diffuse
+            illumination += nearest_object['diffuse'] * light['diffuse'] * np.dot(intersection_to_light, normal_to_surface)
+
+            # specular
+            intersection_to_camera = normalization(camera - intersection)
+            H = normalization(intersection_to_light + intersection_to_camera)
+            illumination += nearest_object['specular'] * light['specular'] * np.dot(normal_to_surface, H) ** (nearest_object['shininess'] / 4)
+
+            #reflection
+            color += reflection * illumination
+            reflection *= nearest_object['reflection']
+
+            #new ray origin and direction
+            origin = shifted_point
+            direction = reflected(direction, normal_to_surface)
+
+        image[i, j] = np.clip(color, 0, 1)
+\end{lstlisting}
+\'E stata inserita la classe \texttt{tqdm} per avere più informazioni durante il processo
+Eseguendo il codice completo, l'immagine di output è 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{Figures/22.png}
+    \caption{}
+    \label{fig:figure}
+\end{figure}
+Il tempo impiegato per rendering è stato di $21:21$ minuti con una risoluzione $3840\times 2160$
+
+\subsection{Generazione di un video}
+Volendo generare un video, è possibile generare i diversi frame facendo variare la posizione della camera. 
 
 					
 %----------------------------------------------------------
