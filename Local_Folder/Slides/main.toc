@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{How?}{3}{0}{1}
-\beamer@sectionintoc {2}{Example}{5}{0}{2}
-\beamer@subsectionintoc {2}{1}{Proposed Menus}{5}{0}{2}
-\beamer@subsectionintoc {2}{2}{Budgeting}{7}{0}{2}
