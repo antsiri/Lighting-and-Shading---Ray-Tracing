@@ -7,4 +7,4 @@ E ANCHE SU COME SI E' ARRIVATI ALLA SOLUZIONE
 PER LANCIARE IL CODICE
 `python ray_tracing`
 
-Le librerie necessarie sono `numpy` 'matplotlib'
+Le librerie necessarie sono `numpy` e `matplotlib`
