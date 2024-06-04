@@ -1,0 +1,123 @@
+%%begin novalidate\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingOne{How?}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{We can do that?}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Yeah to some extent, with \texttt{markdown} package :-)\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem \markdownRendererStrongEmphasis{$\hash$} and \markdownRendererStrongEmphasis{$\hash\hash$} for section and subsection headers (in ToC)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Redefine \markdownRendererStrongEmphasis{$\hash\hash\hash$} to start a frame and frametitle\markdownRendererUlItemEnd 
+\markdownRendererUlItem (Nested) bullet and numbered lists\markdownRendererUlItemEnd 
+\markdownRendererUlItem Text formatting (\markdownRendererEmphasis{italic}, \markdownRendererStrongEmphasis{bold becomes italic + alerted})\markdownRendererUlItemEnd 
+\markdownRendererUlItem Redefine \markdownRendererStrongEmphasis{$\hash\hash\hash\hash$} to start a block with title \linebreak and \markdownRendererStrongEmphasis{\texttt{-{}-{}-{}-}} to end the block\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererStrongEmphasis{\markdownRendererEmphasis{Compile with \texttt{-{}-shell-escape}}} (Overleaf does this already)\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererUlItemEnd 
+\markdownRendererUlItem (Alternative approaches: Pandoc, wikitobeamer)\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\end{frame}\markdownRendererInterblockSeparator
+{}%%%%%%%%%%%%%%%%%%%%%%\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Caveats}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Nothing too complicated!\markdownRendererUlItemEnd 
+\markdownRendererUlItem No verbatim or fragile stuff!\markdownRendererUlItemEnd 
+\markdownRendererUlItem No $\hash$ and \textunderscore{} characters!\linebreak (I used \markdownRendererCodeSpan{\markdownRendererDollarSign{}\markdownRendererBackslash{}hash\markdownRendererDollarSign{}} and \markdownRendererCodeSpan{\markdownRendererBackslash{}textunderscore})\markdownRendererUlItemEnd 
+\markdownRendererUlItem Can't pass options to frames\markdownRendererUlItemEnd 
+\markdownRendererUlItem \markdownRendererStrongEmphasis{Need to write \texttt{\textbackslash end\string{frame\string}} manually!}\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\end{frame}\markdownRendererInterblockSeparator
+{}%%%%%%%%%%%%%%%%%%%%%%\markdownRendererInterblockSeparator
+{}%%% # and ## can still be used as sections and subsections if you prefer\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingOne{Example}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{Proposed Menus}\markdownRendererInterblockSeparator
+{}%%% ### starts a frame + frametitle\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Breakfast Menu}\markdownRendererInterblockSeparator
+{}%%% bulleted lists as usual\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Eggs\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem scrambled\markdownRendererUlItemEnd 
+\markdownRendererUlItem sunny-side-up\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererUlItemEnd 
+\markdownRendererUlItem Coffee\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Americano\markdownRendererUlItemEnd 
+\markdownRendererUlItem Long black\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererUlItemEnd 
+\markdownRendererUlItem Tea\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Darjeeling\markdownRendererUlItemEnd 
+\markdownRendererUlItem English Breakfast\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}%%% Due to the complicatedness of beamer frames, \end{frame} MUST appear in the source code itself and cannot be "hidden" in another command\markdownRendererInterblockSeparator
+{}\end{frame}\markdownRendererInterblockSeparator
+{}%%%%%%%%%%%\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Lunch Menu}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Spaghetti\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Bolognese\markdownRendererUlItemEnd 
+\markdownRendererUlItem Aglio olio\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererUlItemEnd 
+\markdownRendererUlItem Sandwiches\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Egg\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ham\markdownRendererUlItemEnd 
+\markdownRendererUlItem Tuna\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\end{frame}\markdownRendererInterblockSeparator
+{}%%%%%%%%%%%\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingTwo{Budgeting}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Projected Profit}\markdownRendererInterblockSeparator
+{}\markdownRendererOlBegin
+\markdownRendererOlItemWithNumber{1}And the answer is\markdownRendererEllipsis{}\markdownRendererOlItemEnd 
+\markdownRendererOlItemWithNumber{2}$f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$\markdownRendererInterblockSeparator
+{}\markdownRendererOlBegin
+\markdownRendererOlItemWithNumber{1}How do we \markdownRendererEmphasis{know} that?\markdownRendererOlItemEnd 
+\markdownRendererOlItemWithNumber{2}\markdownRendererStrongEmphasis{Maths!}\markdownRendererOlItemEnd 
+\markdownRendererOlEnd \markdownRendererOlItemEnd 
+\markdownRendererOlEnd \markdownRendererInterblockSeparator
+{}\end{frame}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Testing blocks}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingFour{This is a block!}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Here is some content.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Here's more contents.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererHorizontalRule{}\markdownRendererInterblockSeparator
+{}\end{frame}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Citations}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem This is a citation \markdownRendererCite{1}+{}{}{novotny:2017}\markdownRendererUlItemEnd 
+\markdownRendererUlItem Works like \markdownRendererCodeSpan{natbib} syntax \markdownRendererCite{1}+{see}{p.26}{novotny:2019}\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\end{frame}\markdownRendererInterblockSeparator
+{}\markdownRendererHeadingThree{Pipe Tables}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Use \markdownRendererCodeSpan{pipeTables} and \markdownRendererCodeSpan{tableCaptions} options\markdownRendererUlItemEnd 
+\markdownRendererUlItem Available since \markdownRendererCodeSpan{markdown} v2.8.0\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}\markdownRendererTable{Demonstration of pipe table syntax.}{4}{4}{rldc}%
+{{Right}%
+{Left}%
+{Default}%
+{Center}%
+}%
+{{12}%
+{12}%
+{12}%
+{12}%
+}%
+{{123}%
+{123}%
+{123}%
+{123}%
+}%
+{{1}%
+{1}%
+{1}%
+{1}%
+}%
+\markdownRendererInterblockSeparator
+{}\end{frame}\markdownRendererInterblockSeparator
+{}%%novalidate\relax

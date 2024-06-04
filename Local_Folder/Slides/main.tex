@@ -1,0 +1,171 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathabx}
+\usepackage{mathpazo}
+\usepackage{eulervm}
+\usepackage{natbib}
+
+%% Load the markdown package
+\usepackage[citations,footnotes,definitionLists,hashEnumerators,smartEllipses,tightLists=false,pipeTables,tableCaptions,hybrid]{markdown}
+%%begin novalidate
+\markdownSetup{rendererPrototypes={
+ link = {\href{#2}{#1}},
+ headingOne = {\section{#1}},
+ headingTwo = {\subsection{#1}},
+ headingThree = {\begin{frame}\frametitle{#1}},
+ headingFour = {\begin{block}{#1}},
+ horizontalRule = {\end{block}}
+}}
+%%end novalidate
+
+\usetheme{Dresden}
+\usefonttheme{serif}
+\usecolortheme{rose}
+
+
+\title{Writing Beamer Slides with Markdown}
+\author{LianTze Lim}
+\institute{Overleaf}
+
+\begin{document}
+
+\maketitle
+
+\frame{\tableofcontents}
+
+\begin{markdown}
+%%begin novalidate
+
+# How?
+
+### We can do that?
+
+- Yeah to some extent, with \texttt{markdown} package :-)
+    - __$\hash$__ and __$\hash\hash$__ for section and subsection headers (in ToC)
+    - Redefine __$\hash\hash\hash$__ to start a frame and frametitle
+    - (Nested) bullet and numbered lists
+    - Text formatting (*italic*, **bold becomes italic + alerted**) 
+    - Redefine __$\hash\hash\hash\hash$__ to start a block with title \linebreak
+      and __\texttt{-{}-{}-{}-}__ to end the block
+    - ___Compile with \texttt{-{}-shell-escape}___ (Overleaf does this already)
+- (Alternative approaches: Pandoc, wikitobeamer)
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+### Caveats
+
+- Nothing too complicated! 
+- No verbatim or fragile stuff!
+- No $\hash$ and \textunderscore{} characters!\linebreak 
+  (I used `$\hash$` and `\textunderscore`)
+- Can't pass options to frames
+- __Need to write \texttt{\textbackslash end\string{frame\string}} manually!__
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% # and ## can still be used as sections and subsections if you prefer
+# Example
+
+## Proposed Menus
+
+%%% ### starts a frame + frametitle
+### Breakfast Menu
+
+%%% bulleted lists as usual 
+
+- Eggs
+    * scrambled
+    * sunny-side-up
+- Coffee
+    * Americano
+    * Long black
+- Tea
+    * Darjeeling
+    * English Breakfast
+
+%%% Due to the complicatedness of beamer frames, \end{frame} MUST appear in the source code itself and cannot be "hidden" in another command
+
+\end{frame}
+
+%%%%%%%%%%%
+
+### Lunch Menu
+
+- Spaghetti
+    * Bolognese
+    * Aglio olio
+- Sandwiches
+    * Egg
+    * Ham
+    * Tuna
+
+\end{frame}
+
+%%%%%%%%%%%
+
+## Budgeting
+
+### Projected Profit
+
+1. And the answer is...
+2. $f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$
+    #. How do we _know_ that?
+    #. __Maths!__
+
+\end{frame}
+
+### Testing blocks
+
+#### This is a block!
+
+- Here is some content.
+- Here's more contents.
+
+---
+
+\end{frame}
+
+
+### Citations
+
+- This is a citation [@novotny:2017]
+- Works like `natbib` syntax [see @novotny:2019 p.26]
+
+\end{frame}
+
+
+### Pipe Tables
+
+- Use `pipeTables` and `tableCaptions` options
+- Available since `markdown` v2.8.0
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:| 
+|  12   |  12  |  12     |   12   | 
+| 123   |  123 |   123   |  123   | 
+|   1   |    1 |     1   |    1   | 
+
+  : Demonstration of pipe table syntax.
+  
+\end{frame}
+
+%%novalidate
+\end{markdown}
+
+\begin{frame}
+\renewcommand{\bibfont}{\footnotesize}
+\frametitle{Bibliography}
+
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{frame}
+
+
+\end{document}

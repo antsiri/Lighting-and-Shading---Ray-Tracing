@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
+
 def normalization(vector):
     return vector / np.linalg.norm(vector)
 
@@ -49,6 +50,7 @@ objects = [
 ]
 
 image = np.zeros((height, width, 3))
+
 for i, y in tqdm(enumerate(np.linspace(screen[1], screen[3], height)), position=0):
     for j, x in enumerate(np.linspace(screen[0], screen[2], width)):
         pixel = np.array([x, y, 0])

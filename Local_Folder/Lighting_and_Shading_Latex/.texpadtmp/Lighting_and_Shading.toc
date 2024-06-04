@@ -1,0 +1,32 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Introduzione}{1}{section.1}%
+\contentsline {section}{\numberline {2}Le sorgenti di luce}{1}{section.2}%
+\contentsline {section}{\numberline {3}Modelli di riflessione}{2}{section.3}%
+\contentsline {section}{\numberline {4}Modelli di shading}{2}{section.4}%
+\contentsline {section}{\numberline {5}Il modello del Ray Tracing}{3}{section.5}%
+\contentsline {section}{\numberline {6}L'equazione di rendering}{3}{section.6}%
+\contentsline {section}{\numberline {7}Scanline rendering}{3}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Z-buffering}{3}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Algoritmo del pittore}{4}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Ray Tracing}{4}{section.8}%
+\contentsline {section}{\numberline {9}Path Tracing}{5}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Differenze tra Path Tracing e Ray Tracing}{5}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Rumore nel Ray Tracing}{5}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Applicazione}{5}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Prerequisiti}{5}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Algoritmo}{5}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Configurazione della scena}{6}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Intersezione dei raggi}{6}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Definizione della sfera}{6}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}L'intersezione con la sfera}{7}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Intersezione con l'oggetto più vicino}{7}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Punti d'intersezione}{7}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Intersezione della luce}{8}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}Modello di riflessione: Blinn-Phong}{8}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Primo risultato}{9}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}Finto piano}{9}{subsection.11.10}%
+\contentsline {subsection}{\numberline {11.11}Riflessione}{9}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}Generazione di un video}{10}{subsection.11.12}%
+\contentsline {section}{Riferimenti}{10}{subsection.11.12}%
+\contentsfinish 
