@@ -5,6 +5,6 @@ LA [DOCUMENTAZIONE](Lighting_and_Shading.pdf) PERMETTE DI CAPIRE TUTTA LA TEORIA
 E ANCHE SU COME SI E' ARRIVATI ALLA SOLUZIONE
 
 PER LANCIARE IL CODICE
-`python ray_tracing`
+`python ray_tracing.py`
 
 Le librerie necessarie sono `numpy` e `matplotlib`
