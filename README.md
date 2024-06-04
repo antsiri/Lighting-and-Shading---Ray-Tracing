@@ -1,1 +1,10 @@
-[Documentation](Lighting_and_Shading.pdf)
+# PROGETTO DI CALCOLO SCIENTIFICO PER L'INNOVAZIONE TECNLOGICA
+## UNINA
+
+LA [DOCUMENTAZIONE](Lighting_and_Shading.pdf) PERMETTE DI CAPIRE TUTTA LA TEORIA DEL RAY TRACING
+E ANCHE SU COME SI E' ARRIVATI ALLA SOLUZIONE
+
+PER LANCIARE IL CODICE
+'python ray_tracing'
+
+Le librerie necessarie sono 'numpy' e 'matplotlib'
